@@ -15,7 +15,7 @@
   "dependencies": {
     "@next/eslint-plugin-next": "15.1.5",
     "@types/eslint": "^8.56.10",
-    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.20.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-config-turbo": "^2.3.3",
