@@ -21,8 +21,8 @@ importers:
         specifier: ^7.0.3
         version: 7.0.3
       prettier:
-        specifier: ^3.4.2
-        version: 3.4.2
+        specifier: ^3.5.0
+        version: 3.5.0
       turbo:
         specifier: 2.3.3
         version: 2.3.3
@@ -175,8 +175,8 @@ importers:
         specifier: ^13.0.0
         version: 13.0.0
       prettier:
-        specifier: ^3.4.2
-        version: 3.4.2
+        specifier: ^3.5.0
+        version: 3.5.0
       require-in-the-middle:
         specifier: 7.4.0
         version: 7.4.0
@@ -590,8 +590,8 @@ importers:
         specifier: 0.4.4
         version: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       prettier:
-        specifier: ^3.4.2
-        version: 3.4.2
+        specifier: ^3.5.0
+        version: 3.5.0
       react-day-picker:
         specifier: ^8.10.1
         version: 8.10.1(date-fns@4.1.0)(react@19.0.0)
@@ -664,13 +664,13 @@ importers:
     dependencies:
       '@trivago/prettier-plugin-sort-imports':
         specifier: 5.2.1
-        version: 5.2.1(prettier@3.4.2)
+        version: 5.2.1(prettier@3.5.0)
       prettier:
-        specifier: ^3.4.2
-        version: 3.4.2
+        specifier: ^3.5.0
+        version: 3.5.0
       prettier-plugin-tailwindcss:
         specifier: ^0.6.10
-        version: 0.6.10(@trivago/prettier-plugin-sort-imports@5.2.1(prettier@3.4.2))(prettier@3.4.2)
+        version: 0.6.10(@trivago/prettier-plugin-sort-imports@5.2.1(prettier@3.5.0))(prettier@3.5.0)
     devDependencies:
       '@kit/tsconfig':
         specifier: workspace:*
@@ -709,8 +709,8 @@ importers:
         specifier: ^8.57.0
         version: 8.57.1
       prettier:
-        specifier: ^3.4.2
-        version: 3.4.2
+        specifier: ^3.5.0
+        version: 3.5.0
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -3825,8 +3825,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.4.2:
-    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
+  prettier@3.5.0:
+    resolution: {integrity: sha512-quyMrVt6svPS7CjQ9gKb3GLEX/rl3BCL2oa/QkNcXv4YNVBC9olt3s+H7ukto06q7B1Qz46PbrKLO34PR6vXcA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -5731,7 +5731,7 @@ snapshots:
 
   '@tootallnate/quickjs-emscripten@0.23.0': {}
 
-  '@trivago/prettier-plugin-sort-imports@5.2.1(prettier@3.4.2)':
+  '@trivago/prettier-plugin-sort-imports@5.2.1(prettier@3.5.0)':
     dependencies:
       '@babel/generator': 7.26.5
       '@babel/parser': 7.26.5
@@ -5739,7 +5739,7 @@ snapshots:
       '@babel/types': 7.26.5
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 3.4.2
+      prettier: 3.5.0
     transitivePeerDependencies:
       - supports-color
 
@@ -8137,13 +8137,13 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-tailwindcss@0.6.10(@trivago/prettier-plugin-sort-imports@5.2.1(prettier@3.4.2))(prettier@3.4.2):
+  prettier-plugin-tailwindcss@0.6.10(@trivago/prettier-plugin-sort-imports@5.2.1(prettier@3.5.0))(prettier@3.5.0):
     dependencies:
-      prettier: 3.4.2
+      prettier: 3.5.0
     optionalDependencies:
-      '@trivago/prettier-plugin-sort-imports': 5.2.1(prettier@3.4.2)
+      '@trivago/prettier-plugin-sort-imports': 5.2.1(prettier@3.5.0)
 
-  prettier@3.4.2: {}
+  prettier@3.5.0: {}
 
   proc-log@5.0.0: {}
 
