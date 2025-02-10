@@ -499,8 +499,8 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)
       '@radix-ui/react-radio-group':
-        specifier: ^1.2.2
-        version: 1.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)
+        specifier: ^1.2.3
+        version: 1.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)
       '@radix-ui/react-scroll-area':
         specifier: ^1.2.3
         version: 1.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)
@@ -1534,8 +1534,8 @@ packages:
       '@types/react-dom':
         optional: true
 
-  '@radix-ui/react-radio-group@1.2.2':
-    resolution: {integrity: sha512-E0MLLGfOP0l8P/NxgVzfXJ8w3Ch8cdO6UDzJfDChu4EJDy+/WdO5LqpdY8PYnCErkmZH3gZhDL1K7kQ41fAHuQ==}
+  '@radix-ui/react-radio-group@1.2.3':
+    resolution: {integrity: sha512-xtCsqt8Rp09FK50ItqEqTJ7Sxanz8EM8dnkVIhJrc/wkMMomSmXHvYbhv3E7Zx4oXh98aaLt9W679SUYXg4IDA==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -5627,15 +5627,15 @@ snapshots:
       '@types/react': types-react@19.0.0-rc.1
       '@types/react-dom': types-react-dom@19.0.0-rc.1
 
-  '@radix-ui/react-radio-group@1.2.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)':
+  '@radix-ui/react-radio-group@1.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)':
     dependencies:
       '@radix-ui/primitive': 1.1.1
       '@radix-ui/react-compose-refs': 1.1.1(react@19.0.0)(types-react@19.0.0-rc.1)
       '@radix-ui/react-context': 1.1.1(react@19.0.0)(types-react@19.0.0-rc.1)
       '@radix-ui/react-direction': 1.1.0(react@19.0.0)(types-react@19.0.0-rc.1)
       '@radix-ui/react-presence': 1.1.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)
-      '@radix-ui/react-primitive': 2.0.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)
-      '@radix-ui/react-roving-focus': 1.1.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)
+      '@radix-ui/react-primitive': 2.0.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)
+      '@radix-ui/react-roving-focus': 1.1.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(types-react-dom@19.0.0-rc.1)(types-react@19.0.0-rc.1)
       '@radix-ui/react-use-controllable-state': 1.1.0(react@19.0.0)(types-react@19.0.0-rc.1)
       '@radix-ui/react-use-previous': 1.1.0(react@19.0.0)(types-react@19.0.0-rc.1)
       '@radix-ui/react-use-size': 1.1.0(react@19.0.0)(types-react@19.0.0-rc.1)
