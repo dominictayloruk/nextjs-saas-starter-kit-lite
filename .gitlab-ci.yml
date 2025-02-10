@@ -18,11 +18,12 @@ build:
   stage: build
   image: yobasystems/alpine-nodejs:min
   script:
-    - npm ci
-    - npm run build
+    - apk add wget curl git pnpm
+    - pnpm install
+    - pnpm run build
   artifacts:
     paths:
-      - dist/
+      - apps/web/.next/
 
 sast:
   stage: test
@@ -31,8 +32,8 @@ test:
   stage: test
   image: yobasystems/alpine-nodejs:min
   script:
-    - 'if [ ! -d "dist" ]; then echo "Build failed: dist directory not found" && exit 1; fi'
-    - 'if [ -z "$(ls -A dist)" ]; then echo "Build failed: dist directory is empty" && exit 1; fi'
+    - 'if [ ! -d "apps/web/.next" ]; then echo "Build failed: dist directory not found" && exit 1; fi'
+    - 'if [ -z "$(ls -A apps/web/.next)" ]; then echo "Build failed: dist directory is empty" && exit 1; fi'
     - echo "Build completed successfully"
   dependencies:
     - build
