@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@next/eslint-plugin-next": "15.1.6",
-    "@types/eslint": "^8.56.10",
+    "@types/eslint": "^8.56.12",
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
     "eslint-config-prettier": "^10.0.1",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@kit/prettier-config": "workspace:*",
     "@kit/tsconfig": "workspace:*",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "typescript": "^5.7.3"
   },
   "eslintConfig": {
