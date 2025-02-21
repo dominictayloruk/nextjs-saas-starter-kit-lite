@@ -27,7 +27,7 @@
     "@kit/tsconfig": "workspace:*",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "2.48.1",
-    "@tanstack/react-query": "5.66.7",
+    "@tanstack/react-query": "5.66.9",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "next": "15.1.7",
     "react": "19.0.0",
