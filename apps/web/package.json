@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@edge-csrf/nextjs": "2.5.3-cloudflare-rc1",
-    "@hookform/resolvers": "^4.1.0",
+    "@hookform/resolvers": "^4.1.2",
     "@kit/accounts": "workspace:*",
     "@kit/auth": "workspace:*",
     "@kit/i18n": "workspace:*",
