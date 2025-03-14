@@ -33,7 +33,7 @@
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
     "input-otp": "1.4.2",
-    "lucide-react": "^0.479.0",
+    "lucide-react": "^0.482.0",
     "react-top-loading-bar": "3.0.2",
     "recharts": "2.15.1",
     "tailwind-merge": "^2.6.0"
