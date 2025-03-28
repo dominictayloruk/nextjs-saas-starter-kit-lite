@@ -69,8 +69,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/ui
       '@makerkit/data-loader-supabase-core':
-        specifier: ^0.0.8
-        version: 0.0.8(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.1)
+        specifier: ^0.0.10
+        version: 0.0.10(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.1)
       '@makerkit/data-loader-supabase-nextjs':
         specifier: ^1.2.3
         version: 1.2.3(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.1)(@tanstack/react-query@5.69.0(react@19.0.0))(next@15.2.3(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
@@ -1001,6 +1001,12 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
+
+  '@makerkit/data-loader-supabase-core@0.0.10':
+    resolution: {integrity: sha512-kxq3HJBT739QHO3O91S63XZx1IfNpe7duRBPRa5KI1Ud2KaQHQuofbxMKfoN+lVemDwokQLqvsds9yS76ovlzg==}
+    peerDependencies:
+      '@supabase/postgrest-js': '>1.0.0'
+      '@supabase/supabase-js': '>=2.0.0'
 
   '@makerkit/data-loader-supabase-core@0.0.8':
     resolution: {integrity: sha512-beMhHboq5LgbiptXC9CFD6LPo6oVMMHDSEcF5cFcafC7B7E8x6TqV/t3v3cnzl4VXB+4v4ntGaTT2u/aiJ+djA==}
@@ -4774,6 +4780,12 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@makerkit/data-loader-supabase-core@0.0.10(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.1)':
+    dependencies:
+      '@supabase/postgrest-js': 1.19.2
+      '@supabase/supabase-js': 2.49.1
+      ts-case-convert: 2.1.0
 
   '@makerkit/data-loader-supabase-core@0.0.8(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.1)':
     dependencies:
