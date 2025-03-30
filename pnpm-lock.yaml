@@ -70,10 +70,10 @@ importers:
         version: link:../../packages/ui
       '@makerkit/data-loader-supabase-core':
         specifier: ^0.0.10
-        version: 0.0.10(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.3)
+        version: 0.0.10(@supabase/postgrest-js@1.19.4)(@supabase/supabase-js@2.49.4)
       '@makerkit/data-loader-supabase-nextjs':
         specifier: ^1.2.5
-        version: 1.2.5(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.3)(@tanstack/react-query@5.70.0(react@19.0.0))(next@15.2.4(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
+        version: 1.2.5(@supabase/postgrest-js@1.19.4)(@supabase/supabase-js@2.49.4)(@tanstack/react-query@5.70.0(react@19.0.0))(next@15.2.4(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
       '@marsidev/react-turnstile':
         specifier: ^1.1.0
         version: 1.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -81,8 +81,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.0.0)
       '@supabase/supabase-js':
-        specifier: 2.49.3
-        version: 2.49.3
+        specifier: 2.49.4
+        version: 2.49.4
       '@tanstack/react-query':
         specifier: 5.70.0
         version: 5.70.0(react@19.0.0)
@@ -227,8 +227,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.0.0)
       '@supabase/supabase-js':
-        specifier: 2.49.3
-        version: 2.49.3
+        specifier: 2.49.4
+        version: 2.49.4
       '@tanstack/react-query':
         specifier: 5.70.0
         version: 5.70.0(react@19.0.0)
@@ -299,8 +299,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.0.0)
       '@supabase/supabase-js':
-        specifier: 2.49.3
-        version: 2.49.3
+        specifier: 2.49.4
+        version: 2.49.4
       '@tanstack/react-query':
         specifier: 5.70.0
         version: 5.70.0(react@19.0.0)
@@ -390,8 +390,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@supabase/supabase-js':
-        specifier: 2.49.3
-        version: 2.49.3
+        specifier: 2.49.4
+        version: 2.49.4
       next:
         specifier: 15.2.4
         version: 15.2.4(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -437,10 +437,10 @@ importers:
         version: link:../../tooling/typescript
       '@supabase/ssr':
         specifier: ^0.6.1
-        version: 0.6.1(@supabase/supabase-js@2.49.3)
+        version: 0.6.1(@supabase/supabase-js@2.49.4)
       '@supabase/supabase-js':
-        specifier: 2.49.3
-        version: 2.49.3
+        specifier: 2.49.4
+        version: 2.49.4
       '@tanstack/react-query':
         specifier: 5.70.0
         version: 5.70.0(react@19.0.0)
@@ -1676,8 +1676,8 @@ packages:
     resolution: {integrity: sha512-1ibVeYUacxWYi9i0cf5efil6adJ9WRyZBLivgjs+AUpewx1F3xPi7gLgaASI2SmIQxPoCEjAsLAzKPgMJVgOUQ==}
     engines: {node: 4.x || >=6.0.0}
 
-  '@supabase/postgrest-js@1.19.2':
-    resolution: {integrity: sha512-MXRbk4wpwhWl9IN6rIY1mR8uZCCG4MZAEji942ve6nMwIqnBgBnZhZlON6zTTs6fgveMnoCILpZv1+K91jN+ow==}
+  '@supabase/postgrest-js@1.19.4':
+    resolution: {integrity: sha512-O4soKqKtZIW3olqmbXXbKugUtByD2jPa8kL2m2c1oozAO11uCcGrRhkZL0kVxjBLrXHE0mdSkFsMj7jDSfyNpw==}
 
   '@supabase/realtime-js@2.11.2':
     resolution: {integrity: sha512-u/XeuL2Y0QEhXSoIPZZwR6wMXgB+RQbJzG9VErA3VghVt7uRfSVsjeqd7m5GhX3JR6dM/WRmLbVR8URpDWG4+w==}
@@ -1690,8 +1690,8 @@ packages:
   '@supabase/storage-js@2.7.1':
     resolution: {integrity: sha512-asYHcyDR1fKqrMpytAS1zjyEfvxuOIp1CIXX7ji4lHHcJKqyk+sLl/Vxgm4sN6u8zvuUtae9e4kDxQP2qrwWBA==}
 
-  '@supabase/supabase-js@2.49.3':
-    resolution: {integrity: sha512-42imTuAm9VEQGlXT0O6zrSwNnsIblU1eieqrAWj8HSmFaYkxepk/IuUVw1M5hKelk0ZYlqDKNwRErI1rF1EL4w==}
+  '@supabase/supabase-js@2.49.4':
+    resolution: {integrity: sha512-jUF0uRUmS8BKt37t01qaZ88H9yV1mbGYnqLeuFWLcdV+x1P4fl0yP9DGtaEhFPZcwSom7u16GkLEH9QJZOqOkw==}
 
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
@@ -4751,16 +4751,16 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@makerkit/data-loader-supabase-core@0.0.10(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.3)':
+  '@makerkit/data-loader-supabase-core@0.0.10(@supabase/postgrest-js@1.19.4)(@supabase/supabase-js@2.49.4)':
     dependencies:
-      '@supabase/postgrest-js': 1.19.2
-      '@supabase/supabase-js': 2.49.3
+      '@supabase/postgrest-js': 1.19.4
+      '@supabase/supabase-js': 2.49.4
       ts-case-convert: 2.1.0
 
-  '@makerkit/data-loader-supabase-nextjs@1.2.5(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.3)(@tanstack/react-query@5.70.0(react@19.0.0))(next@15.2.4(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
+  '@makerkit/data-loader-supabase-nextjs@1.2.5(@supabase/postgrest-js@1.19.4)(@supabase/supabase-js@2.49.4)(@tanstack/react-query@5.70.0(react@19.0.0))(next@15.2.4(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)':
     dependencies:
-      '@makerkit/data-loader-supabase-core': 0.0.10(@supabase/postgrest-js@1.19.2)(@supabase/supabase-js@2.49.3)
-      '@supabase/supabase-js': 2.49.3
+      '@makerkit/data-loader-supabase-core': 0.0.10(@supabase/postgrest-js@1.19.4)(@supabase/supabase-js@2.49.4)
+      '@supabase/supabase-js': 2.49.4
       '@tanstack/react-query': 5.70.0(react@19.0.0)
       next: 15.2.4(@opentelemetry/api@1.9.0)(@playwright/test@1.51.1)(babel-plugin-react-compiler@19.0.0-beta-714736e-20250131)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       react: 19.0.0
@@ -5450,7 +5450,7 @@ snapshots:
     dependencies:
       whatwg-url: 5.0.0
 
-  '@supabase/postgrest-js@1.19.2':
+  '@supabase/postgrest-js@1.19.4':
     dependencies:
       '@supabase/node-fetch': 2.6.15
 
@@ -5464,21 +5464,21 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@supabase/ssr@0.6.1(@supabase/supabase-js@2.49.3)':
+  '@supabase/ssr@0.6.1(@supabase/supabase-js@2.49.4)':
     dependencies:
-      '@supabase/supabase-js': 2.49.3
+      '@supabase/supabase-js': 2.49.4
       cookie: 1.0.2
 
   '@supabase/storage-js@2.7.1':
     dependencies:
       '@supabase/node-fetch': 2.6.15
 
-  '@supabase/supabase-js@2.49.3':
+  '@supabase/supabase-js@2.49.4':
     dependencies:
       '@supabase/auth-js': 2.69.1
       '@supabase/functions-js': 2.4.4
       '@supabase/node-fetch': 2.6.15
-      '@supabase/postgrest-js': 1.19.2
+      '@supabase/postgrest-js': 1.19.4
       '@supabase/realtime-js': 2.11.2
       '@supabase/storage-js': 2.7.1
     transitivePeerDependencies:
