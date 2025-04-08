@@ -78,7 +78,7 @@
     "pino-pretty": "^13.0.0",
     "prettier": "^3.5.3",
     "require-in-the-middle": "7.5.2",
-    "supabase": "^2.20.5",
+    "supabase": "^2.20.12",
     "tailwindcss": "3.4.17",
     "typescript": "^5.8.2"
   },
