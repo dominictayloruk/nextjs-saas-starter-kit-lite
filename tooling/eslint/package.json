@@ -27,7 +27,7 @@
     "@kit/prettier-config": "workspace:*",
     "@kit/tsconfig": "workspace:*",
     "eslint": "^9.23.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "eslintConfig": {
     "root": true,
