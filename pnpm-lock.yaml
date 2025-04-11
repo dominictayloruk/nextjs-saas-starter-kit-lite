@@ -142,8 +142,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@next/bundle-analyzer':
-        specifier: 15.2.4
-        version: 15.2.4
+        specifier: 15.3.0
+        version: 15.3.0
       '@types/mdx':
         specifier: ^2.0.13
         version: 2.0.13
@@ -1047,8 +1047,8 @@ packages:
       react: ^17.0.2 || ^18.0.0 || ^19.0
       react-dom: ^17.0.2 || ^18.0.0 || ^19.0
 
-  '@next/bundle-analyzer@15.2.4':
-    resolution: {integrity: sha512-72OXS/+r3Q6PW9oCBlkxogsEJ9DIoD64dGe8OZc2nKcHu3HbKKaXoDkutC8u7cxmBFd+ERt3D0/MoP7eZkhhog==}
+  '@next/bundle-analyzer@15.3.0':
+    resolution: {integrity: sha512-t1dn32bTBJTfksh2xLfpaw6hNNNrw1rsr1GlVSkRbJ5626YgEMFBjuos5tHr6l9/b+jKz1HFYFlWNgrIHqCslw==}
 
   '@next/env@13.5.8':
     resolution: {integrity: sha512-YmiG58BqyZ2FjrF2+5uZExL2BrLr8RTQzLXNDJ8pJr0O+rPlOeDPXp1p1/4OrR3avDidzZo3D8QO2cuDv1KCkw==}
@@ -1144,8 +1144,8 @@ packages:
     resolution: {integrity: sha512-c83qWb22rNRuB0UaVCI0uRPNRr8Z0FWnEIvT47jiHAmOIUHbBOg5XvV7pM5x+rKn9HRpjxquDbXYSXr3fAKFcw==}
     engines: {node: '>=12'}
 
-  '@polka/url@1.0.0-next.28':
-    resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
+  '@polka/url@1.0.0-next.29':
+    resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
   '@radix-ui/number@1.1.0':
     resolution: {integrity: sha512-V3gRzhVNU1ldS5XhAPTom1fOIo4ccrjjJgmE+LI2h/WaFpHmx0MQApT+KZHnx8abG6Avtfcz4WoEciMnpFT3HQ==}
@@ -4838,7 +4838,7 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@next/bundle-analyzer@15.2.4':
+  '@next/bundle-analyzer@15.3.0':
     dependencies:
       webpack-bundle-analyzer: 4.10.1
     transitivePeerDependencies:
@@ -4911,7 +4911,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@polka/url@1.0.0-next.28': {}
+  '@polka/url@1.0.0-next.29': {}
 
   '@radix-ui/number@1.1.0': {}
 
@@ -8127,7 +8127,7 @@ snapshots:
 
   sirv@2.0.4:
     dependencies:
-      '@polka/url': 1.0.0-next.28
+      '@polka/url': 1.0.0-next.29
       mrmime: 2.0.1
       totalist: 3.0.1
 
