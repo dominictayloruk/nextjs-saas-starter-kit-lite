@@ -54,7 +54,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-hook-form": "^7.56.1",
-    "react-i18next": "^15.4.1",
+    "react-i18next": "^15.5.1",
     "recharts": "2.15.3",
     "sonner": "^2.0.3",
     "tailwind-merge": "^2.6.0",
