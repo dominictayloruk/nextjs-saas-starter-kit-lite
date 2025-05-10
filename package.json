@@ -35,7 +35,12 @@
   "pnpm": {
     "overrides": {
       "react-is": "19.0.0"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "core-js-pure",
+      "sharp",
+      "supabase"
+    ]
   },
   "devDependencies": {
     "@manypkg/cli": "^0.24.0",
