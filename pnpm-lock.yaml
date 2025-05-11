@@ -780,6 +780,7 @@ packages:
 
   '@edge-csrf/nextjs@2.5.3-cloudflare-rc1':
     resolution: {integrity: sha512-sH8HKl2s/zFkIgXcVzODljHsBhKW7LN2gXeUNEQTSP31Chy40ryjR7iTf0MA/DtPhOpXUkd6IBUMMF820sK+rA==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     peerDependencies:
       next: ^13.0.0 || ^14.0.0 || ^15.0.0
 
