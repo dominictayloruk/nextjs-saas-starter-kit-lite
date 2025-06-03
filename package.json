@@ -31,7 +31,7 @@
     "supabase:web:reset": "pnpm --filter web supabase:reset"
   },
   "prettier": "@kit/prettier-config",
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.11.1",
   "pnpm": {
     "overrides": {
       "react-is": "19.0.0"
@@ -44,10 +44,10 @@
   },
   "devDependencies": {
     "@manypkg/cli": "^0.24.0",
-    "@turbo/gen": "^2.5.3",
+    "@turbo/gen": "^2.5.4",
     "cross-env": "^7.0.3",
     "prettier": "^3.5.3",
-    "turbo": "2.5.3",
+    "turbo": "2.5.4",
     "typescript": "^5.8.3"
   }
 }
