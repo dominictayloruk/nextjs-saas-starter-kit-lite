@@ -126,8 +126,8 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
       zod:
-        specifier: ^3.25.49
-        version: 3.25.49
+        specifier: ^3.25.55
+        version: 3.25.55
     devDependencies:
       '@kit/eslint-config':
         specifier: workspace:*
@@ -263,8 +263,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       zod:
-        specifier: ^3.25.49
-        version: 3.25.49
+        specifier: ^3.25.55
+        version: 3.25.55
 
   packages/features/auth:
     devDependencies:
@@ -323,8 +323,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       zod:
-        specifier: ^3.25.49
-        version: 3.25.49
+        specifier: ^3.25.55
+        version: 3.25.55
 
   packages/i18n:
     dependencies:
@@ -396,8 +396,8 @@ importers:
         specifier: 15.3.3
         version: 15.3.3(@playwright/test@1.52.0)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       zod:
-        specifier: ^3.25.49
-        version: 3.25.49
+        specifier: ^3.25.55
+        version: 3.25.55
 
   packages/shared:
     dependencies:
@@ -457,8 +457,8 @@ importers:
         specifier: ^0.0.1
         version: 0.0.1
       zod:
-        specifier: ^3.25.49
-        version: 3.25.49
+        specifier: ^3.25.55
+        version: 3.25.55
 
   packages/ui:
     dependencies:
@@ -614,8 +614,8 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
       zod:
-        specifier: ^3.25.49
-        version: 3.25.49
+        specifier: ^3.25.55
+        version: 3.25.55
 
   tooling/eslint:
     dependencies:
@@ -4570,8 +4570,8 @@ packages:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
-  zod@3.25.49:
-    resolution: {integrity: sha512-JMMPMy9ZBk3XFEdbM3iL1brx4NUSejd6xr3ELrrGEfGb355gjhiAWtG3K5o+AViV/3ZfkIrCzXsZn6SbLwTR8Q==}
+  zod@3.25.55:
+    resolution: {integrity: sha512-219huNnkSLQnLsQ3uaRjXsxMrVm5C9W3OOpEVt2k5tvMKuA8nBSu38e0B//a+he9Iq2dvmk2VyYVlHqiHa4YBA==}
 
 snapshots:
 
@@ -8757,4 +8757,4 @@ snapshots:
 
   yocto-queue@1.2.1: {}
 
-  zod@3.25.49: {}
+  zod@3.25.55: {}
