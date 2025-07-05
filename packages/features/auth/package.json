@@ -36,7 +36,7 @@
     "next": "15.3.4",
     "react-hook-form": "^7.59.0",
     "react-i18next": "^15.5.3",
-    "sonner": "^2.0.5",
+    "sonner": "^2.0.6",
     "zod": "^3.25.67"
   },
   "prettier": "@kit/prettier-config",
