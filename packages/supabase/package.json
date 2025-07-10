@@ -32,7 +32,7 @@
     "next": "15.3.5",
     "react": "19.1.0",
     "server-only": "^0.0.1",
-    "zod": "^3.25.74"
+    "zod": "^4.0.2"
   },
   "eslintConfig": {
     "root": true,

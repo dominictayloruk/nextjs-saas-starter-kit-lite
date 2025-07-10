@@ -58,7 +58,7 @@
     "recharts": "3.0.2",
     "sonner": "^2.0.6",
     "tailwind-merge": "^2.6.0",
-    "zod": "^3.25.74"
+    "zod": "^4.0.2"
   },
   "devDependencies": {
     "@kit/eslint-config": "workspace:*",
