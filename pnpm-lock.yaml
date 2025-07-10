@@ -117,8 +117,8 @@ importers:
         specifier: ^15.6.0
         version: 15.6.0(i18next@25.3.1(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
       recharts:
-        specifier: 3.0.2
-        version: 3.0.2(react-dom@19.1.0(react@19.1.0))(react-is@19.0.0)(react@19.1.0)(redux@5.0.1)(types-react@19.0.0-alpha.3)
+        specifier: 3.1.0
+        version: 3.1.0(react-dom@19.1.0(react@19.1.0))(react-is@19.0.0)(react@19.1.0)(redux@5.0.1)(types-react@19.0.0-alpha.3)
       sonner:
         specifier: ^2.0.6
         version: 2.0.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -541,8 +541,8 @@ importers:
         specifier: 3.0.2
         version: 3.0.2(react@19.1.0)
       recharts:
-        specifier: 3.0.2
-        version: 3.0.2(react-dom@19.1.0(react@19.1.0))(react-is@19.0.0)(react@19.1.0)(redux@5.0.1)(types-react@19.0.0-alpha.3)
+        specifier: 3.1.0
+        version: 3.1.0(react-dom@19.1.0(react@19.1.0))(react-is@19.0.0)(react@19.1.0)(redux@5.0.1)(types-react@19.0.0-alpha.3)
       tailwind-merge:
         specifier: ^2.6.0
         version: 2.6.0
@@ -2571,8 +2571,8 @@ packages:
     resolution: {integrity: sha512-w+5mJ3GuFL+NjVtJlvydShqE1eN3h3PbI7/5LAsYJP/2qtuMXjfL2LpHSRqo4b4eSF5K/DH1JXKUAHSB2UW50g==}
     engines: {node: '>= 0.4'}
 
-  es-toolkit@1.39.6:
-    resolution: {integrity: sha512-uiVjnLem6kkfXumlwUEWEKnwUN5QbSEB0DHy2rNJt0nkYcob5K0TXJ7oJRzhAcvx+SRmz4TahKyN5V9cly/IPA==}
+  es-toolkit@1.39.7:
+    resolution: {integrity: sha512-ek/wWryKouBrZIjkwW2BFf91CWOIMvoy2AE5YYgUrfWsJQM2Su1LoLtrw8uusEpN9RfqLlV/0FVNjT0WMv8Bxw==}
 
   escalade@3.2.0:
     resolution: {integrity: sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==}
@@ -3928,8 +3928,8 @@ packages:
     resolution: {integrity: sha512-57frrGM/OCTLqLOAh0mhVA9VBMHd+9U7Zb2THMGdBUoZVOtGbJzjxsYGDJ3A9AYYCP4hn6y1TVbaOfzWtm5GFg==}
     engines: {node: '>= 12.13.0'}
 
-  recharts@3.0.2:
-    resolution: {integrity: sha512-eDc3ile9qJU9Dp/EekSthQPhAVPG48/uM47jk+PF7VBQngxeW3cwQpPHb/GHC1uqwyCRWXcIrDzuHRVrnRryoQ==}
+  recharts@3.1.0:
+    resolution: {integrity: sha512-NqAqQcGBmLrfDs2mHX/bz8jJCQtG2FeXfE0GqpZmIuXIjkpIwj8sd9ad0WyvKiBKPd8ZgNG0hL85c8sFDwascw==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -6694,7 +6694,7 @@ snapshots:
       is-date-object: 1.1.0
       is-symbol: 1.1.1
 
-  es-toolkit@1.39.6: {}
+  es-toolkit@1.39.7: {}
 
   escalade@3.2.0: {}
 
@@ -8089,12 +8089,12 @@ snapshots:
 
   real-require@0.2.0: {}
 
-  recharts@3.0.2(react-dom@19.1.0(react@19.1.0))(react-is@19.0.0)(react@19.1.0)(redux@5.0.1)(types-react@19.0.0-alpha.3):
+  recharts@3.1.0(react-dom@19.1.0(react@19.1.0))(react-is@19.0.0)(react@19.1.0)(redux@5.0.1)(types-react@19.0.0-alpha.3):
     dependencies:
       '@reduxjs/toolkit': 2.8.2(react-redux@9.2.0(react@19.1.0)(redux@5.0.1)(types-react@19.0.0-alpha.3))(react@19.1.0)
       clsx: 2.1.1
       decimal.js-light: 2.5.1
-      es-toolkit: 1.39.6
+      es-toolkit: 1.39.7
       eventemitter3: 5.0.1
       immer: 10.1.1
       react: 19.1.0
