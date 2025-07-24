@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 import { usePathname } from 'next/navigation';
 
-import type { AuthChangeEvent, Session } from '@supabase/supabase-js';
+import { type AuthChangeEvent, type Session } from '@supabase/supabase-js';
 
 import { useSupabase } from './use-supabase';
 

@@ -1,4 +1,4 @@
-import { Logger as LoggerInstance } from './logger';
+import { type Logger as LoggerInstance } from './logger';
 
 const LOGGER = process.env.LOGGER ?? 'pino';
 

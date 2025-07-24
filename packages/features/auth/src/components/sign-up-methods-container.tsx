@@ -1,6 +1,6 @@
 'use client';
 
-import type { Provider } from '@supabase/supabase-js';
+import { type Provider } from '@supabase/supabase-js';
 
 import { isBrowser } from '@kit/shared/utils';
 import { If } from '@kit/ui/if';

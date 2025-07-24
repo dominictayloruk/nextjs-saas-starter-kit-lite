@@ -286,7 +286,6 @@ const ChartLegendContent: React.FC<
       )}
     >
       {payload.map((item) => {
-        /* eslint-disable @typescript-eslint/restrict-template-expressions */
         const key = `${nameKey ?? item.dataKey ?? 'value'}`;
         const itemConfig = getPayloadConfigFromPayload(config, item, key);
 

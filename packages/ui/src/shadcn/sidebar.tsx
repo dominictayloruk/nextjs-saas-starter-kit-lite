@@ -6,14 +6,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { Slot } from '@radix-ui/react-slot';
-import { VariantProps, cva } from 'class-variance-authority';
+import { type VariantProps, cva } from 'class-variance-authority';
 import { ChevronDown, PanelLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 import { useIsMobile } from '../hooks/use-mobile';
 import { cn, isRouteActive } from '../lib/utils';
 import { If } from '../makerkit/if';
-import type { SidebarConfig } from '../makerkit/sidebar';
+import { type SidebarConfig } from '../makerkit/sidebar';
 import { Trans } from '../makerkit/trans';
 import { Button } from './button';
 import {

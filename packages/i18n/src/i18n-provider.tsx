@@ -1,8 +1,6 @@
 'use client';
 
-import type { InitOptions, i18n } from 'i18next';
-
-import { initializeI18nClient } from './i18n.client';
+import { type InitOptions, type i18n } from 'i18next';
 
 let i18nInstance: i18n;
 
@@ -30,18 +28,14 @@ export function I18nProvider({
  * @param settings
  * @param resolver
  */
-function useI18nClient(settings: InitOptions, resolver: Resolver) {
+function useI18nClient(settings: InitOptions, _resolver: Resolver) {
   if (
     !i18nInstance ||
     i18nInstance.language !== settings.lng ||
     i18nInstance.options.ns?.length !== settings.ns?.length
   ) {
-    throw loadI18nInstance(settings, resolver);
+    throw new Error('Loading i18n instance');
   }
 
   return i18nInstance;
-}
-
-async function loadI18nInstance(settings: InitOptions, resolver: Resolver) {
-  i18nInstance = await initializeI18nClient(settings, resolver);
 }

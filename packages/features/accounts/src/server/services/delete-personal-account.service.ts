@@ -1,9 +1,9 @@
 import 'server-only';
 
-import { SupabaseClient } from '@supabase/supabase-js';
+import { type SupabaseClient } from '@supabase/supabase-js';
 
 import { getLogger } from '@kit/shared/logger';
-import { Database } from '@kit/supabase/database';
+import { type Database } from '@kit/supabase/database';
 
 export function createDeletePersonalAccountService() {
   return new DeletePersonalAccountService();

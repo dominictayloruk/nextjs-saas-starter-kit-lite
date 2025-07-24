@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '@kit/ui/button';
+import { type Button } from '@kit/ui/button';
 import { cn } from '@kit/ui/utils';
 
 import { CtaButton } from './cta-button';

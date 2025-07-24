@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'sonner';
 
-import { Database } from '@kit/supabase/database';
+import { type Database } from '@kit/supabase/database';
 import { Button } from '@kit/ui/button';
 import {
   Form,

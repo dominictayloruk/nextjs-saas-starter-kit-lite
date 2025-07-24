@@ -1,4 +1,4 @@
-import type { InitOptions } from 'i18next';
+import { type InitOptions } from 'i18next';
 
 /**
  * Get i18n settings for i18next.

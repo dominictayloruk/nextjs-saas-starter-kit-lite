@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { CheckIcon, ExclamationTriangleIcon } from '@radix-ui/react-icons';
 import { ArrowRightIcon } from 'lucide-react';
 import { useForm } from 'react-hook-form';
-import type { z } from 'zod';
+import { type z } from 'zod';
 
 import { useUpdateUser } from '@kit/supabase/hooks/use-update-user-mutation';
 import { Alert, AlertDescription, AlertTitle } from '@kit/ui/alert';

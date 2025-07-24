@@ -2,7 +2,7 @@
 
 import { createContext, useCallback, useRef, useState } from 'react';
 
-import { TurnstileInstance } from '@marsidev/react-turnstile';
+import { type TurnstileInstance } from '@marsidev/react-turnstile';
 
 export const Captcha = createContext<{
   token: string;

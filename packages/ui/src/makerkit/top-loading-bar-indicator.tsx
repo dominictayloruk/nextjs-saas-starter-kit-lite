@@ -2,7 +2,7 @@
 
 import { createRef, useEffect } from 'react';
 
-import type { LoadingBarRef } from 'react-top-loading-bar';
+import { type LoadingBarRef } from 'react-top-loading-bar';
 import LoadingBar from 'react-top-loading-bar';
 
 let running = false;

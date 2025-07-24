@@ -2,7 +2,7 @@
 
 import { useContext } from 'react';
 
-import { Turnstile, TurnstileProps } from '@marsidev/react-turnstile';
+import { Turnstile, type TurnstileProps } from '@marsidev/react-turnstile';
 
 import { Captcha } from './captcha-provider';
 

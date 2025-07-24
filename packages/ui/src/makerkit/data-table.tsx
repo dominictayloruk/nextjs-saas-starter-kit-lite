@@ -10,14 +10,14 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table';
-import type {
-  ColumnDef,
-  ColumnFiltersState,
-  PaginationState,
-  Table as ReactTable,
-  Row,
-  SortingState,
-  VisibilityState,
+import {
+  type ColumnDef,
+  type ColumnFiltersState,
+  type PaginationState,
+  type Table as ReactTable,
+  type Row,
+  type SortingState,
+  type VisibilityState,
 } from '@tanstack/react-table';
 import {
   ChevronLeft,

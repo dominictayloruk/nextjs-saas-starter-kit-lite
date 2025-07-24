@@ -2,7 +2,7 @@
 
 import { useCallback } from 'react';
 
-import type { Provider } from '@supabase/supabase-js';
+import { type Provider } from '@supabase/supabase-js';
 
 import { useSignInWithProvider } from '@kit/supabase/hooks/use-sign-in-with-provider';
 import { If } from '@kit/ui/if';

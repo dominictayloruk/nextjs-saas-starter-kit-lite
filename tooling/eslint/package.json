@@ -4,20 +4,22 @@
   "private": true,
   "license": "MIT",
   "files": [
-    "./apps.js"
+    "./apps.js",
+    "./eslint.config.js"
   ],
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
-    "lint": "eslint .",
+    "lint": "eslint . --config eslint.config.lint.js",
     "format": "prettier --check \"**/*.{js,json}\"",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "15.4.1",
+    "@eslint/js": "^9.31.0",
+    "@next/eslint-plugin-next": "15.4.3",
     "@types/eslint": "^9.6.1",
-    "@typescript-eslint/eslint-plugin": "^8.37.0",
-    "@typescript-eslint/parser": "^8.37.0",
-    "eslint-config-prettier": "^10.1.5",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-config-turbo": "^2.5.5",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-react": "7.37.5",
@@ -28,12 +30,6 @@
     "@kit/tsconfig": "workspace:*",
     "eslint": "^9.31.0",
     "typescript": "^5.8.3"
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "./apps.js"
-    ]
   },
   "prettier": "@kit/prettier-config"
 }

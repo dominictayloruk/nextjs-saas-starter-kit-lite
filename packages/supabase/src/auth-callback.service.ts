@@ -1,9 +1,9 @@
 import 'server-only';
 
 import {
-  AuthError,
+  type AuthError,
   type EmailOtpType,
-  SupabaseClient,
+  type SupabaseClient,
 } from '@supabase/supabase-js';
 
 /**
@@ -46,7 +46,7 @@ class AuthCallbackService {
 
     // set the host to the request host since outside of Vercel it gets set as "localhost"
     if (url.host.includes('localhost:') && !host?.includes('localhost')) {
-      url.host = host as string;
+      url.host = host!;
       url.port = '';
     }
 

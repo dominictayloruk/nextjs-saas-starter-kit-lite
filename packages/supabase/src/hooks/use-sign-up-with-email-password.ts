@@ -29,7 +29,7 @@ export function useSignUpWithEmailAndPassword() {
     });
 
     if (response.error) {
-      throw response.error.message;
+      throw new Error(response.error.message);
     }
 
     const user = response.data?.user;

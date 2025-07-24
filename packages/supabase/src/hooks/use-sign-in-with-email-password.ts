@@ -1,4 +1,4 @@
-import type { SignInWithPasswordCredentials } from '@supabase/supabase-js';
+import { type SignInWithPasswordCredentials } from '@supabase/supabase-js';
 
 import { useMutation } from '@tanstack/react-query';
 
@@ -16,7 +16,7 @@ export function useSignInWithEmailPassword() {
     const response = await client.auth.signInWithPassword(credentials);
 
     if (response.error) {
-      throw response.error.message;
+      throw new Error(response.error.message);
     }
 
     const user = response.data?.user;

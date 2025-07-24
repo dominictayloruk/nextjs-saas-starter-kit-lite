@@ -1,6 +1,6 @@
 'use client';
 
-import type { FormEvent, MouseEventHandler } from 'react';
+import { type FormEvent, type MouseEventHandler } from 'react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import Image from 'next/image';

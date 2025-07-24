@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from 'react';
 
-import type { Factor } from '@supabase/supabase-js';
+import { type Factor } from '@supabase/supabase-js';
 
 import { ExclamationTriangleIcon } from '@radix-ui/react-icons';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
@@ -138,9 +138,11 @@ function ConfirmUnenrollFactorModal(
         if (!response.success) {
           const errorCode = response.data;
 
-          throw t(`auth:errors.${errorCode}`, {
-            defaultValue: t(`account:unenrollFactorError`),
-          });
+          throw new Error(
+            t(`auth:errors.${errorCode}`, {
+              defaultValue: t(`account:unenrollFactorError`),
+            }),
+          );
         }
       });
 

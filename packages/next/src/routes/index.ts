@@ -1,11 +1,11 @@
 import 'server-only';
 
 import { redirect } from 'next/navigation';
-import { NextRequest, NextResponse } from 'next/server';
+import { type NextRequest, type NextResponse } from 'next/server';
 
-import { User } from '@supabase/supabase-js';
+import { type User } from '@supabase/supabase-js';
 
-import { z } from 'zod';
+import { type z } from 'zod';
 
 import { verifyCaptchaToken } from '@kit/auth/captcha/server';
 import { requireUser } from '@kit/supabase/require-user';
@@ -111,15 +111,20 @@ export const enhanceRouteHandler = <
       user = auth.data as UserParam;
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let body: any;
+    let body: Params['schema'] extends z.ZodType
+      ? z.infer<Params['schema']>
+      : undefined;
 
     if (params?.schema) {
       // clone the request to read the body
       // so that we can pass it to the handler safely
-      const json = await request.clone().json();
+      const json = (await request.clone().json()) as unknown;
 
-      body = zodParseFactory(params.schema)(json);
+      body = zodParseFactory(params.schema)(
+        json,
+      ) as Params['schema'] extends z.ZodType
+        ? z.infer<Params['schema']>
+        : undefined;
     }
 
     return handler({

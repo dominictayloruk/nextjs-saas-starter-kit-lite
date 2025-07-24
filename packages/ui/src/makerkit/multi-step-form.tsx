@@ -1,7 +1,7 @@
 'use client';
 
 import React, {
-  HTMLProps,
+  type HTMLProps,
   createContext,
   useCallback,
   useContext,
@@ -13,7 +13,7 @@ import React, {
 
 import { Slot, Slottable } from '@radix-ui/react-slot';
 import { useMutation } from '@tanstack/react-query';
-import { Path, UseFormReturn } from 'react-hook-form';
+import { type Path, type UseFormReturn } from 'react-hook-form';
 import { z } from 'zod';
 
 import { cn } from '../lib/utils';
@@ -294,7 +294,7 @@ export function useMultiStepForm<Schema extends z.ZodType>(
   return useMemo(
     () => ({
       form,
-      currentStep: stepNames[state.currentStepIndex] as string,
+      currentStep: stepNames[state.currentStepIndex]!,
       currentStepIndex: state.currentStepIndex,
       totalSteps: stepNames.length,
       isFirstStep: state.currentStepIndex === 0,

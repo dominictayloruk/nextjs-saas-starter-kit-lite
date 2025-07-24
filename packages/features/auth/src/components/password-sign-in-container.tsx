@@ -2,12 +2,12 @@
 
 import { useCallback } from 'react';
 
-import type { z } from 'zod';
+import { type z } from 'zod';
 
 import { useSignInWithEmailPassword } from '@kit/supabase/hooks/use-sign-in-with-email-password';
 
 import { useCaptchaToken } from '../captcha/client';
-import type { PasswordSignInSchema } from '../schemas/password-sign-in.schema';
+import { type PasswordSignInSchema } from '../schemas/password-sign-in.schema';
 import { AuthErrorAlert } from './auth-error-alert';
 import { PasswordSignInForm } from './password-sign-in-form';
 

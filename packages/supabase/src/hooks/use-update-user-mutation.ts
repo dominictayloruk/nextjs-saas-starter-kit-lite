@@ -1,4 +1,4 @@
-import type { UserAttributes } from '@supabase/supabase-js';
+import { type UserAttributes } from '@supabase/supabase-js';
 
 import { useMutation } from '@tanstack/react-query';
 

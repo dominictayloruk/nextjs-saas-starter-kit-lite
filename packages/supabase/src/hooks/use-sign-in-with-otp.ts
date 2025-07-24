@@ -1,4 +1,4 @@
-import type { SignInWithPasswordlessCredentials } from '@supabase/supabase-js';
+import { type SignInWithPasswordlessCredentials } from '@supabase/supabase-js';
 
 import { useMutation } from '@tanstack/react-query';
 
@@ -24,7 +24,7 @@ export function useSignInWithOtp() {
         return {} as never;
       }
 
-      throw result.error.message;
+      throw new Error(result.error.message);
     }
 
     return result.data;

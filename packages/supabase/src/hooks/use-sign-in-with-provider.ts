@@ -1,4 +1,4 @@
-import type { SignInWithOAuthCredentials } from '@supabase/supabase-js';
+import { type SignInWithOAuthCredentials } from '@supabase/supabase-js';
 
 import { useMutation } from '@tanstack/react-query';
 
@@ -16,7 +16,7 @@ export function useSignInWithProvider() {
     const response = await client.auth.signInWithOAuth(credentials);
 
     if (response.error) {
-      throw response.error.message;
+      throw new Error(response.error.message);
     }
 
     return response.data;

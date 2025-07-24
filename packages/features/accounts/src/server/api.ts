@@ -1,6 +1,6 @@
-import { SupabaseClient } from '@supabase/supabase-js';
+import { type SupabaseClient } from '@supabase/supabase-js';
 
-import { Database } from '@kit/supabase/database';
+import { type Database } from '@kit/supabase/database';
 
 /**
  * Class representing an API for interacting with user accounts.

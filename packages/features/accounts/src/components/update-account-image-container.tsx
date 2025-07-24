@@ -2,12 +2,12 @@
 
 import { useCallback } from 'react';
 
-import type { SupabaseClient } from '@supabase/supabase-js';
+import { type SupabaseClient } from '@supabase/supabase-js';
 
 import { useTranslation } from 'react-i18next';
 import { toast } from 'sonner';
 
-import { Database } from '@kit/supabase/database';
+import { type Database } from '@kit/supabase/database';
 import { useSupabase } from '@kit/supabase/hooks/use-supabase';
 import { ImageUploader } from '@kit/ui/image-uploader';
 import { Trans } from '@kit/ui/trans';

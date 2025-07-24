@@ -1,4 +1,4 @@
-import type { SupabaseClient, User } from '@supabase/supabase-js';
+import { type SupabaseClient, type User } from '@supabase/supabase-js';
 
 import { checkRequiresMultiFactorAuthentication } from './check-requires-mfa';
 

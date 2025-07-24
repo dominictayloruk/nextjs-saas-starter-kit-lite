@@ -31,7 +31,7 @@ export async function verifyCaptchaToken(token: string) {
     throw new Error('Failed to verify CAPTCHA token');
   }
 
-  const data = await res.json();
+  const data = (await res.json()) as { success: boolean };
 
   if (!data.success) {
     throw new Error('Invalid CAPTCHA token');
