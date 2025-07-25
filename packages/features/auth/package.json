@@ -19,7 +19,7 @@
     "./resend-email-link": "./src/components/resend-auth-link-form.tsx"
   },
   "devDependencies": {
-    "@hookform/resolvers": "^5.1.1",
+    "@hookform/resolvers": "^5.2.0",
     "@kit/eslint-config": "workspace:*",
     "@kit/prettier-config": "workspace:*",
     "@kit/shared": "workspace:*",
