@@ -17,10 +17,10 @@ export default async function RootLayout({
 }) {
   const { language } = await createI18nServerInstance();
   const theme = await getTheme();
-  const className = getClassName(theme);
+  const className = getClassName();
 
   return (
-    <html lang={language} className={className}>
+    <html lang={language} className={className} suppressHydrationWarning>
       <body>
         <RootProviders theme={theme} lang={language}>
           {children}
@@ -32,10 +32,7 @@ export default async function RootLayout({
   );
 }
 
-function getClassName(theme?: string) {
-  const dark = theme === 'dark';
-  const light = !dark;
-
+function getClassName() {
   const font = [sans.variable, heading.variable].reduce<string[]>(
     (acc, curr) => {
       if (acc.includes(curr)) return acc;
@@ -45,10 +42,7 @@ function getClassName(theme?: string) {
     [],
   );
 
-  return cn('min-h-screen bg-background antialiased', ...font, {
-    dark,
-    light,
-  });
+  return cn('min-h-screen bg-background antialiased', ...font);
 }
 
 async function getTheme() {
