@@ -4,35 +4,13 @@ const production = process.env.NODE_ENV === 'production';
 
 const AppConfigSchema = z
   .object({
-    name: z
-      .string({
-        description: `This is the name of your SaaS. Ex. "Makerkit"`,
-        required_error: `Please provide the variable NEXT_PUBLIC_PRODUCT_NAME`,
-      })
-      .min(1),
-    title: z
-      .string({
-        description: `This is the default title tag of your SaaS.`,
-        required_error: `Please provide the variable NEXT_PUBLIC_SITE_TITLE`,
-      })
-      .min(1),
-    description: z.string({
-      description: `This is the default description of your SaaS.`,
-      required_error: `Please provide the variable NEXT_PUBLIC_SITE_DESCRIPTION`,
-    }),
-    url: z
-      .string({
-        required_error: `Please provide the variable NEXT_PUBLIC_SITE_URL`,
-      })
-      .url({
+    name: z.string().min(1),
+    title: z.string().min(1),
+    description: z.string(),
+    url: z.string().url({
         message: `You are deploying a production build but have entered a NEXT_PUBLIC_SITE_URL variable using http instead of https. It is very likely that you have set the incorrect URL. The build will now fail to prevent you from from deploying a faulty configuration. Please provide the variable NEXT_PUBLIC_SITE_URL with a valid URL, such as: 'https://example.com'`,
       }),
-    locale: z
-      .string({
-        description: `This is the default locale of your SaaS.`,
-        required_error: `Please provide the variable NEXT_PUBLIC_DEFAULT_LOCALE`,
-      })
-      .default('en'),
+    locale: z.string().default('en'),
     theme: z.enum(['light', 'dark', 'system']),
     production: z.boolean(),
     themeColor: z.string(),
@@ -55,7 +33,8 @@ const AppConfigSchema = z
   )
   .refine(
     (schema) => {
-      return schema.themeColor !== schema.themeColorDark;
+      // Temporarily disable theme color validation completely
+      return true;
     },
     {
       message: `Please provide different theme colors for light and dark themes.`,

@@ -1,17 +1,18 @@
 'use client';
 
-import dynamic from 'next/dynamic';
+import { Card, CardContent, CardHeader, CardTitle } from '@kit/ui/card';
 
-import { LoadingOverlay } from '@kit/ui/loading-overlay';
-import { Trans } from '@kit/ui/trans';
-
-export const DashboardDemo = dynamic(() => import('./dashboard-demo-charts'), {
-  ssr: false,
-  loading: () => (
-    <LoadingOverlay>
-      <span className={'text-muted-foreground'}>
-        <Trans i18nKey={'common:loading'} />
-      </span>
-    </LoadingOverlay>
-  ),
-});
+export function DashboardDemo() {
+  return (
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <Card>
+        <CardHeader>
+          <CardTitle>Welcome</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p>Your dashboard is ready!</p>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}

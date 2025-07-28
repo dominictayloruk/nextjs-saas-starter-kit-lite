@@ -13,7 +13,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@kit/ui/dropdown-menu';
-import { Trans } from '@kit/ui/trans';
+// import { Trans } from '@kit/ui/trans';
 
 import { navigationConfig } from '~/config/navigation.config';
 
@@ -76,7 +76,7 @@ function DropdownLink(
         {props.Icon}
 
         <span>
-          <Trans i18nKey={props.label} defaults={props.label} />
+          {props.label}
         </span>
       </Link>
     </DropdownMenuItem>
@@ -96,7 +96,7 @@ function SignOutDropdownItem(
       <LogOut className={'h-6'} />
 
       <span>
-        <Trans i18nKey={'common:signOut'} defaults={'Sign out'} />
+        Sign out
       </span>
     </DropdownMenuItem>
   );
