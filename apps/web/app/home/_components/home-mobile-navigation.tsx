@@ -13,6 +13,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@kit/ui/dropdown-menu';
+
 // import { Trans } from '@kit/ui/trans';
 
 import { navigationConfig } from '~/config/navigation.config';
@@ -75,9 +76,7 @@ function DropdownLink(
       >
         {props.Icon}
 
-        <span>
-          {props.label}
-        </span>
+        <span>{props.label}</span>
       </Link>
     </DropdownMenuItem>
   );
@@ -95,9 +94,7 @@ function SignOutDropdownItem(
     >
       <LogOut className={'h-6'} />
 
-      <span>
-        Sign out
-      </span>
+      <span>Sign out</span>
     </DropdownMenuItem>
   );
 }

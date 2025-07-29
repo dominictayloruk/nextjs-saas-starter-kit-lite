@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+
 import { type InitOptions, type i18n } from 'i18next';
 
 import { initializeI18nClient } from './i18n.client';
@@ -32,31 +33,37 @@ export function I18nProvider({
         if (
           !i18nInstance ||
           i18nInstance.language !== settings.lng ||
-          i18nInstance.options.ns?.length !== settings.ns?.length
+          (i18nInstance.options.ns as string[] | undefined)?.length !==
+            (settings.ns as string[] | undefined)?.length
         ) {
           i18nInstance = await initializeI18nClient(settings, resolver);
         }
-        
+
         if (isMounted) {
           setIsInitialized(true);
           setError(null);
         }
-      } catch (err) {
+      } catch (err: unknown) {
         if (isMounted) {
-          setError(err instanceof Error ? err : new Error('Failed to initialize i18n'));
+          const errorInstance =
+            err instanceof Error ? err : new Error('Failed to initialize i18n');
+          setError(errorInstance);
         }
       }
     };
 
-    initializeI18n();
+    void initializeI18n();
 
     return () => {
       isMounted = false;
     };
-  }, [settings.lng, settings.ns, resolver]);
+  }, [settings.lng, settings.ns, resolver, settings]);
 
   if (error) {
-    console.error('I18n initialization error:', error);
+    console.error(
+      'I18n initialization error:',
+      error instanceof Error ? error.message : String(error),
+    );
     // Return children anyway to prevent complete app crash
     return children;
   }

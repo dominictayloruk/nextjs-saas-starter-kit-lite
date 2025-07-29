@@ -1,5 +1,5 @@
-import { PageBody } from '@kit/ui/page';
 import { Card, CardContent, CardHeader, CardTitle } from '@kit/ui/card';
+import { PageBody } from '@kit/ui/page';
 
 export const generateMetadata = async () => {
   return {

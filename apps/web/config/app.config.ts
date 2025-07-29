@@ -8,8 +8,8 @@ const AppConfigSchema = z
     title: z.string().min(1),
     description: z.string(),
     url: z.string().url({
-        message: `You are deploying a production build but have entered a NEXT_PUBLIC_SITE_URL variable using http instead of https. It is very likely that you have set the incorrect URL. The build will now fail to prevent you from from deploying a faulty configuration. Please provide the variable NEXT_PUBLIC_SITE_URL with a valid URL, such as: 'https://example.com'`,
-      }),
+      message: `You are deploying a production build but have entered a NEXT_PUBLIC_SITE_URL variable using http instead of https. It is very likely that you have set the incorrect URL. The build will now fail to prevent you from from deploying a faulty configuration. Please provide the variable NEXT_PUBLIC_SITE_URL with a valid URL, such as: 'https://example.com'`,
+    }),
     locale: z.string().default('en'),
     theme: z.enum(['light', 'dark', 'system']),
     production: z.boolean(),
@@ -32,7 +32,7 @@ const AppConfigSchema = z
     },
   )
   .refine(
-    (schema) => {
+    (_schema) => {
       // Temporarily disable theme color validation completely
       return true;
     },

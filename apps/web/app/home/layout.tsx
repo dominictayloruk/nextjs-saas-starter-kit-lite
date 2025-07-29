@@ -1,17 +1,9 @@
-import { use } from 'react';
-
-import { cookies } from 'next/headers';
-
-import {
-  Page,
-  PageLayoutStyle,
-  PageMobileNavigation,
-  PageNavigation,
-} from '@kit/ui/page';
+import { Page, PageMobileNavigation, PageNavigation } from '@kit/ui/page';
 import { SidebarProvider } from '@kit/ui/shadcn-sidebar';
 
 import { AppLogo } from '~/components/app-logo';
 import { navigationConfig } from '~/config/navigation.config';
+
 // import { withI18n } from '~/lib/i18n/with-i18n';
 // import { requireUserInServerComponent } from '~/lib/server/require-user-in-server-component';
 
@@ -36,8 +28,22 @@ export default HomeLayout;
 function SidebarLayout({ children }: React.PropsWithChildren) {
   const sidebarMinimized = navigationConfig.sidebarCollapsed;
   // Temporarily disable user requirement for build
-  // const [user] = use(Promise.all([requireUserInServerComponent()]));
-  const user = { id: 'temp', email: 'temp@example.com' } as any;
+  // TODO: replace with requireUserInServerComponent() when ready
+  const user = {
+    id: 'temp-user-id',
+    email: 'temp@example.com',
+    aud: 'authenticated',
+    role: 'authenticated',
+    email_confirmed_at: new Date().toISOString(),
+    phone: '',
+    confirmed_at: new Date().toISOString(),
+    last_sign_in_at: new Date().toISOString(),
+    app_metadata: {},
+    user_metadata: {},
+    identities: [],
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  };
 
   return (
     <SidebarProvider minimized={sidebarMinimized}>
@@ -79,14 +85,5 @@ function MobileNavigation() {
 
       <HomeMobileNavigation />
     </>
-  );
-}
-
-async function getLayoutStyle() {
-  const cookieStore = await cookies();
-
-  return (
-    (cookieStore.get('layout-style')?.value as PageLayoutStyle) ??
-    navigationConfig.style
   );
 }
