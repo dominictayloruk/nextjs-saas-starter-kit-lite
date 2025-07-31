@@ -23,7 +23,7 @@
     "@kit/tsconfig": "workspace:*",
     "@tanstack/react-query": "5.83.0",
     "@types/react": "npm:types-react@19.0.0-alpha.3",
-    "next": "15.4.4",
+    "next": "15.4.5",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "react-i18next": "^15.6.1"
