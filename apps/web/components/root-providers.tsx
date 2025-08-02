@@ -46,7 +46,8 @@ export function RootProviders({
 
   return (
     <ReactQueryProvider>
-      <I18nProvider settings={i18nSettings} resolver={i18nResolver}>
+      {/* Temporarily disable I18nProvider to fix build issues */}
+      {/* <I18nProvider settings={i18nSettings} resolver={i18nResolver}> */}
         <CaptchaProvider>
           <CaptchaTokenSetter siteKey={captchaSiteKey} />
 
@@ -66,7 +67,7 @@ export function RootProviders({
         <If condition={featuresFlagConfig.enableVersionUpdater}>
           <VersionUpdater />
         </If>
-      </I18nProvider>
+      {/* </I18nProvider> */}
     </ReactQueryProvider>
   );
 }

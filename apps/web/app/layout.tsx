@@ -15,7 +15,9 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { language } = await createI18nServerInstance();
+  // Temporarily disable i18n to fix build issues
+  // const { language } = await createI18nServerInstance();
+  const language = 'en'; // fallback language
   const theme = await getTheme();
   const className = getClassName();
 

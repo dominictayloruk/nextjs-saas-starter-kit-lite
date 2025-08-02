@@ -9,10 +9,10 @@ const iconClasses = 'w-4';
 
 const routes = [
   {
-    label: 'common:routes.application',
+    label: 'Application', // Temporarily use static strings to fix build issues
     children: [
       {
-        label: 'common:routes.home',
+        label: 'Home',
         path: pathsConfig.app.home,
         Icon: <Home className={iconClasses} />,
         end: true,
@@ -20,10 +20,10 @@ const routes = [
     ],
   },
   {
-    label: 'common:routes.settings',
+    label: 'Settings',
     children: [
       {
-        label: 'common:routes.profile',
+        label: 'Profile',
         path: pathsConfig.app.profileSettings,
         Icon: <User className={iconClasses} />,
       },
