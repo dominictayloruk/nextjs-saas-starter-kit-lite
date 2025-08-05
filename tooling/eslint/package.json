@@ -18,7 +18,7 @@
     "@next/eslint-plugin-next": "15.4.5",
     "@types/eslint": "^9.6.1",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
-    "@typescript-eslint/parser": "^8.38.0",
+    "@typescript-eslint/parser": "^8.39.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-turbo": "^2.5.5",
     "eslint-plugin-import": "^2.32.0",
