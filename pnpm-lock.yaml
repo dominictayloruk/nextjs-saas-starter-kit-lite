@@ -145,8 +145,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@next/bundle-analyzer':
-        specifier: 15.4.5
-        version: 15.4.5
+        specifier: 15.4.6
+        version: 15.4.6
       '@types/mdx':
         specifier: ^2.0.13
         version: 2.0.13
@@ -1064,8 +1064,8 @@ packages:
       react: ^17.0.2 || ^18.0.0 || ^19.0
       react-dom: ^17.0.2 || ^18.0.0 || ^19.0
 
-  '@next/bundle-analyzer@15.4.5':
-    resolution: {integrity: sha512-S2o5Zn5u1iKdn9GrsUd86jvjXRXmKNT/JpQuovfLgUigPC+fshyKvNebvnYSshmztsZL1U7AuUPg71PzAaiHcg==}
+  '@next/bundle-analyzer@15.4.6':
+    resolution: {integrity: sha512-LZWqTQgIpfhblT77VVc1r4qtHJY1pfZOAIx8zNtliU7L3pMjpNrG4rYWikJ7AyAI/RgYyt2sCVWqkeOZmFp7Zg==}
 
   '@next/env@13.5.11':
     resolution: {integrity: sha512-fbb2C7HChgM7CemdCY+y3N1n8pcTKdqtQLbC7/EQtPdLvlMUT9JX/dBYl8MMZAtYG4uVMyPFHXckb68q/NRwqg==}
@@ -4916,7 +4916,7 @@ snapshots:
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
 
-  '@next/bundle-analyzer@15.4.5':
+  '@next/bundle-analyzer@15.4.6':
     dependencies:
       webpack-bundle-analyzer: 4.10.1
     transitivePeerDependencies:
