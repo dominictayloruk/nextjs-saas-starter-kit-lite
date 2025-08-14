@@ -79,7 +79,7 @@
     "prettier": "^3.6.2",
     "require-in-the-middle": "7.5.2",
     "supabase": "^2.33.9",
-    "tailwindcss": "3.4.17",
+    "tailwindcss": "4.1.12",
     "typescript": "^5.9.2"
   },
   "eslintConfig": {
