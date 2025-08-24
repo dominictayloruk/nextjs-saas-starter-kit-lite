@@ -37,7 +37,6 @@ export function RootProviders({
   lang: string;
   theme?: string;
 }>) {
-
   return (
     <ReactQueryProvider>
       {/* Temporarily disable I18nProvider to fix build issues */}
