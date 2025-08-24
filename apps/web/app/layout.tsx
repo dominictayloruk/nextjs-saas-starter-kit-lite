@@ -5,7 +5,6 @@ import { cn } from '@kit/ui/utils';
 
 import { RootProviders } from '~/components/root-providers';
 import { heading, sans } from '~/lib/fonts';
-import { createI18nServerInstance } from '~/lib/i18n/i18n.server';
 import { generateRootMetadata } from '~/lib/root-metdata';
 
 import '../styles/globals.css';
