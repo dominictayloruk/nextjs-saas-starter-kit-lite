@@ -3,7 +3,7 @@
   "private": true,
   "sideEffects": false,
   "engines": {
-    "node": ">=v18.18.0"
+    "node": ">=22.17.2"
   },
   "author": {
     "url": "https://makerkit.dev",
