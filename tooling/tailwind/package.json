@@ -10,13 +10,14 @@
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
     "lint": "eslint .",
-    "format": "prettier --check \"**/*.{js,ts,json}\"",
+    "format": "prettier --write \"**/*.{js,ts,json}\"",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
     "autoprefixer": "^10.4.21",
     "postcss": "8.5.6",
-    "tailwindcss": "3.4.17",
+    "tailwindcss": "4.1.12",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {

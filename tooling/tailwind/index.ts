@@ -1,9 +1,9 @@
 import { type Config } from 'tailwindcss';
 import tailwindCssAnimate from 'tailwindcss-animate';
-import { fontFamily } from 'tailwindcss/defaultTheme';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
-  darkMode: ['class'],
+  darkMode: 'class',
   content: [
     '../../packages/ui/src/**/*.tsx',
     '../../packages/billing/gateway/src/**/*.tsx',
@@ -77,8 +77,8 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        cal: ['var(--font-cal)', ...fontFamily.sans],
-        sans: ['-apple-system', 'var(--font-sans)', ...fontFamily.sans],
+        cal: ['var(--font-cal)', ...defaultTheme.fontFamily.sans],
+        sans: ['-apple-system', 'var(--font-sans)', ...defaultTheme.fontFamily.sans],
         heading: ['var(--font-heading)'],
       },
       keyframes: {
