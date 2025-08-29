@@ -71,7 +71,7 @@
     "@types/react": "npm:types-react@19.0.0-alpha.3",
     "@types/react-dom": "npm:types-react-dom@19.0.0-alpha.3",
     "autoprefixer": "^10.4.21",
-    "babel-plugin-react-compiler": "19.1.0-rc.2",
+    "babel-plugin-react-compiler": "19.1.0-rc.3",
     "dotenv-cli": "^10.0.0",
     "eslint": "^9.34.0",
     "import-in-the-middle": "1.14.2",
