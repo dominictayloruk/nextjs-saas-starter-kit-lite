@@ -26,13 +26,13 @@
     "@kit/tailwind-config": "workspace:*",
     "@kit/tsconfig": "workspace:*",
     "@supabase/ssr": "^0.7.0",
-    "@supabase/supabase-js": "2.56.0",
+    "@supabase/supabase-js": "2.56.1",
     "@tanstack/react-query": "5.85.5",
     "@types/react": "npm:types-react@19.0.0-alpha.3",
-    "next": "15.5.0",
+    "next": "15.5.2",
     "react": "19.1.1",
     "server-only": "^0.0.1",
-    "zod": "^4.1.1"
+    "zod": "^4.1.5"
   },
   "eslintConfig": {
     "root": true,
