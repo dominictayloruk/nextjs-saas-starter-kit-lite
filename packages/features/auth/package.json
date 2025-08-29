@@ -35,7 +35,7 @@
     "lucide-react": "^0.541.0",
     "next": "15.5.0",
     "react-hook-form": "^7.62.0",
-    "react-i18next": "^15.7.2",
+    "react-i18next": "^15.7.3",
     "sonner": "^2.0.7",
     "zod": "^4.1.1"
   },
