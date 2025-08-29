@@ -12,8 +12,8 @@ importers:
   .:
     devDependencies:
       '@manypkg/cli':
-        specifier: ^0.25.0
-        version: 0.25.0
+        specifier: ^0.25.1
+        version: 0.25.1
       '@turbo/gen':
         specifier: ^2.5.6
         version: 2.5.6(@types/node@24.1.0)(typescript@5.9.2)
@@ -1046,8 +1046,8 @@ packages:
       next: '>=13.4.0'
       react: '>=18.0.0'
 
-  '@manypkg/cli@0.25.0':
-    resolution: {integrity: sha512-qohYlbfx4RdQX6OqRR0yW7duYzSxgzB/gfHuJA+RDOrbNXhLh/3KQxcH9FxyRqr69OP+CjuEeWZVRfLhfJjqfw==}
+  '@manypkg/cli@0.25.1':
+    resolution: {integrity: sha512-lag906FyiNxzZjsRErkUD5/to174I2JzPk5bZubuJp6loMKKJn73zrtqeU7nHlVkHBg3tgXDTJj22HxUDxLRXw==}
     engines: {node: '>=20.0.0'}
     hasBin: true
 
@@ -2752,8 +2752,9 @@ packages:
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
 
-  fdir@6.4.6:
-    resolution: {integrity: sha512-hiFoqpyZcfNm1yc4u8oWCf9A2c4D3QjCrks3zmoVKVxpQRzmPNar1hUJcBG2RQHvEVGDN+Jm81ZheVLAQMK6+w==}
+  fdir@6.5.0:
+    resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
       picomatch: ^3 || ^4
     peerDependenciesMeta:
@@ -3239,8 +3240,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  ky@1.8.2:
-    resolution: {integrity: sha512-XybQJ3d4Ea1kI27DoelE5ZCT3bSJlibYTtQuMsyzKox3TMyayw1asgQdl54WroAm+fIA3ZCr8zXW2RpR7qWVpA==}
+  ky@1.9.1:
+    resolution: {integrity: sha512-WGzpBn57klhxsqRTEABAqF4tqTtqCuxoTIv9m6nIZtMMFTVcrHp7bRDWblzFIfqkb47+OhTztOgHn6A4xItmqg==}
     engines: {node: '>=18'}
 
   levn@0.4.1:
@@ -4857,7 +4858,7 @@ snapshots:
     transitivePeerDependencies:
       - '@supabase/postgrest-js'
 
-  '@manypkg/cli@0.25.0':
+  '@manypkg/cli@0.25.1':
     dependencies:
       '@manypkg/get-packages': 3.1.0
       detect-indent: 7.0.1
@@ -6804,7 +6805,7 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
-  fdir@6.4.6(picomatch@4.0.3):
+  fdir@6.5.0(picomatch@4.0.3):
     optionalDependencies:
       picomatch: 4.0.3
 
@@ -7318,7 +7319,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  ky@1.8.2: {}
+  ky@1.9.1: {}
 
   levn@0.4.1:
     dependencies:
@@ -7679,7 +7680,7 @@ snapshots:
 
   package-json@10.0.1:
     dependencies:
-      ky: 1.8.2
+      ky: 1.9.1
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
       semver: 7.7.2
@@ -8348,7 +8349,7 @@ snapshots:
 
   tinyglobby@0.2.14:
     dependencies:
-      fdir: 6.4.6(picomatch@4.0.3)
+      fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
 
   tinygradient@1.1.5:
