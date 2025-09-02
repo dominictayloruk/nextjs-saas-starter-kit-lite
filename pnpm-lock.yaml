@@ -76,7 +76,7 @@ importers:
         version: 0.0.10(@supabase/postgrest-js@1.21.3)(@supabase/supabase-js@2.56.1)
       '@makerkit/data-loader-supabase-nextjs':
         specifier: ^1.2.5
-        version: 1.2.5(@supabase/postgrest-js@1.21.3)(@supabase/supabase-js@2.56.1)(@tanstack/react-query@5.85.5(react@19.1.1))(next@15.5.2(@playwright/test@1.55.0)(babel-plugin-react-compiler@19.1.0-rc.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)
+        version: 1.2.5(@supabase/postgrest-js@1.21.3)(@supabase/supabase-js@2.56.1)(@tanstack/react-query@5.85.8(react@19.1.1))(next@15.5.2(@playwright/test@1.55.0)(babel-plugin-react-compiler@19.1.0-rc.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)
       '@marsidev/react-turnstile':
         specifier: ^1.3.0
         version: 1.3.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -87,8 +87,8 @@ importers:
         specifier: 2.56.1
         version: 2.56.1
       '@tanstack/react-query':
-        specifier: 5.85.5
-        version: 5.85.5(react@19.1.1)
+        specifier: 5.85.8
+        version: 5.85.8(react@19.1.1)
       '@tanstack/react-table':
         specifier: ^8.21.3
         version: 8.21.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -233,8 +233,8 @@ importers:
         specifier: 2.56.1
         version: 2.56.1
       '@tanstack/react-query':
-        specifier: 5.85.5
-        version: 5.85.5(react@19.1.1)
+        specifier: 5.85.8
+        version: 5.85.8(react@19.1.1)
       '@types/react':
         specifier: npm:types-react@19.0.0-alpha.3
         version: types-react@19.0.0-alpha.3
@@ -305,8 +305,8 @@ importers:
         specifier: 2.56.1
         version: 2.56.1
       '@tanstack/react-query':
-        specifier: 5.85.5
-        version: 5.85.5(react@19.1.1)
+        specifier: 5.85.8
+        version: 5.85.8(react@19.1.1)
       '@types/react':
         specifier: npm:types-react@19.0.0-alpha.3
         version: types-react@19.0.0-alpha.3
@@ -357,8 +357,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/typescript
       '@tanstack/react-query':
-        specifier: 5.85.5
-        version: 5.85.5(react@19.1.1)
+        specifier: 5.85.8
+        version: 5.85.8(react@19.1.1)
       '@types/react':
         specifier: npm:types-react@19.0.0-alpha.3
         version: types-react@19.0.0-alpha.3
@@ -448,8 +448,8 @@ importers:
         specifier: 2.56.1
         version: 2.56.1
       '@tanstack/react-query':
-        specifier: 5.85.5
-        version: 5.85.5(react@19.1.1)
+        specifier: 5.85.8
+        version: 5.85.8(react@19.1.1)
       '@types/react':
         specifier: npm:types-react@19.0.0-alpha.3
         version: types-react@19.0.0-alpha.3
@@ -569,8 +569,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.1.1)
       '@tanstack/react-query':
-        specifier: 5.85.5
-        version: 5.85.5(react@19.1.1)
+        specifier: 5.85.8
+        version: 5.85.8(react@19.1.1)
       '@tanstack/react-table':
         specifier: ^8.21.3
         version: 8.21.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -1838,11 +1838,11 @@ packages:
   '@tailwindcss/postcss@4.1.12':
     resolution: {integrity: sha512-5PpLYhCAwf9SJEeIsSmCDLgyVfdBhdBpzX1OJ87anT9IVR0Z9pjM0FNixCAUAHGnMBGB8K99SwAheXrT0Kh6QQ==}
 
-  '@tanstack/query-core@5.85.5':
-    resolution: {integrity: sha512-KO0WTob4JEApv69iYp1eGvfMSUkgw//IpMnq+//cORBzXf0smyRwPLrUvEe5qtAEGjwZTXrjxg+oJNP/C00t6w==}
+  '@tanstack/query-core@5.85.7':
+    resolution: {integrity: sha512-FLT3EtuTbXBmOrDku4bI80Eivmjn/o/Zc1lVEd/6yzR8UAUSnDwYiwghCZvLqHyGSN5mO35ux1yPGMFYBFRSwA==}
 
-  '@tanstack/react-query@5.85.5':
-    resolution: {integrity: sha512-/X4EFNcnPiSs8wM2v+b6DqS5mmGeuJQvxBglmDxl6ZQb5V26ouD2SJYAcC3VjbNwqhY2zjxVD15rDA5nGbMn3A==}
+  '@tanstack/react-query@5.85.8':
+    resolution: {integrity: sha512-r3rW55STAO03EJg5mrCVIJvaEK3oeHme5u7QovuRFIKRbEgTzTv2DPdenX46X+x56LsU3ree1N4rzI/+gJ7KEA==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -4847,11 +4847,11 @@ snapshots:
       '@supabase/supabase-js': 2.56.1
       ts-case-convert: 2.1.0
 
-  '@makerkit/data-loader-supabase-nextjs@1.2.5(@supabase/postgrest-js@1.21.3)(@supabase/supabase-js@2.56.1)(@tanstack/react-query@5.85.5(react@19.1.1))(next@15.5.2(@playwright/test@1.55.0)(babel-plugin-react-compiler@19.1.0-rc.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)':
+  '@makerkit/data-loader-supabase-nextjs@1.2.5(@supabase/postgrest-js@1.21.3)(@supabase/supabase-js@2.56.1)(@tanstack/react-query@5.85.8(react@19.1.1))(next@15.5.2(@playwright/test@1.55.0)(babel-plugin-react-compiler@19.1.0-rc.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)':
     dependencies:
       '@makerkit/data-loader-supabase-core': 0.0.10(@supabase/postgrest-js@1.21.3)(@supabase/supabase-js@2.56.1)
       '@supabase/supabase-js': 2.56.1
-      '@tanstack/react-query': 5.85.5(react@19.1.1)
+      '@tanstack/react-query': 5.85.8(react@19.1.1)
       next: 15.5.2(@playwright/test@1.55.0)(babel-plugin-react-compiler@19.1.0-rc.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       react: 19.1.1
     transitivePeerDependencies:
@@ -5675,11 +5675,11 @@ snapshots:
       postcss: 8.5.6
       tailwindcss: 4.1.12
 
-  '@tanstack/query-core@5.85.5': {}
+  '@tanstack/query-core@5.85.7': {}
 
-  '@tanstack/react-query@5.85.5(react@19.1.1)':
+  '@tanstack/react-query@5.85.8(react@19.1.1)':
     dependencies:
-      '@tanstack/query-core': 5.85.5
+      '@tanstack/query-core': 5.85.7
       react: 19.1.1
 
   '@tanstack/react-table@8.21.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
