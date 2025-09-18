@@ -60,8 +60,8 @@ importers:
         specifier: 2.5.3-cloudflare-rc1
         version: 2.5.3-cloudflare-rc1(next@15.5.3(@playwright/test@1.55.0)(babel-plugin-react-compiler@19.1.0-rc.3)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))
       '@hookform/resolvers':
-        specifier: ^5.2.1
-        version: 5.2.1(react-hook-form@7.62.0(react@19.1.1))
+        specifier: ^5.2.2
+        version: 5.2.2(react-hook-form@7.62.0(react@19.1.1))
       '@kit/accounts':
         specifier: workspace:*
         version: link:../../packages/features/accounts
@@ -209,8 +209,8 @@ importers:
         version: 5.1.5
     devDependencies:
       '@hookform/resolvers':
-        specifier: ^5.2.1
-        version: 5.2.1(react-hook-form@7.62.0(react@19.1.1))
+        specifier: ^5.2.2
+        version: 5.2.2(react-hook-form@7.62.0(react@19.1.1))
       '@kit/eslint-config':
         specifier: workspace:*
         version: link:../../../tooling/eslint
@@ -281,8 +281,8 @@ importers:
   packages/features/auth:
     devDependencies:
       '@hookform/resolvers':
-        specifier: ^5.2.1
-        version: 5.2.1(react-hook-form@7.62.0(react@19.1.1))
+        specifier: ^5.2.2
+        version: 5.2.2(react-hook-form@7.62.0(react@19.1.1))
       '@kit/eslint-config':
         specifier: workspace:*
         version: link:../../../tooling/eslint
@@ -478,8 +478,8 @@ importers:
   packages/ui:
     dependencies:
       '@hookform/resolvers':
-        specifier: ^5.2.1
-        version: 5.2.1(react-hook-form@7.62.0(react@19.1.1))
+        specifier: ^5.2.2
+        version: 5.2.2(react-hook-form@7.62.0(react@19.1.1))
       '@radix-ui/react-accordion':
         specifier: 1.2.12
         version: 1.2.12(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(types-react-dom@19.0.0-alpha.3)(types-react@19.0.0-alpha.3)
@@ -874,8 +874,8 @@ packages:
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
 
-  '@hookform/resolvers@5.2.1':
-    resolution: {integrity: sha512-u0+6X58gkjMcxur1wRWokA7XsiiBJ6aK17aPZxhkoYiK5J+HcTx0Vhu9ovXe6H+dVpO6cjrn2FkJTryXEMlryQ==}
+  '@hookform/resolvers@5.2.2':
+    resolution: {integrity: sha512-A/IxlMLShx3KjV/HeTcTfaMxdwy690+L/ZADoeaTltLx+CVuzkeVIPuybK3jrRfw7YZnmdKsVVHAlEPIAEUNlA==}
     peerDependencies:
       react-hook-form: ^7.55.0
 
@@ -4921,7 +4921,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.10': {}
 
-  '@hookform/resolvers@5.2.1(react-hook-form@7.62.0(react@19.1.1))':
+  '@hookform/resolvers@5.2.2(react-hook-form@7.62.0(react@19.1.1))':
     dependencies:
       '@standard-schema/utils': 0.3.0
       react-hook-form: 7.62.0(react@19.1.1)

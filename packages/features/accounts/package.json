@@ -19,7 +19,7 @@
     "nanoid": "^5.1.5"
   },
   "devDependencies": {
-    "@hookform/resolvers": "^5.2.1",
+    "@hookform/resolvers": "^5.2.2",
     "@kit/eslint-config": "workspace:*",
     "@kit/next": "workspace:*",
     "@kit/prettier-config": "workspace:*",
