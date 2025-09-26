@@ -56,7 +56,7 @@
     "prettier": "^3.6.2",
     "react-day-picker": "^9.9.0",
     "react-hook-form": "^7.62.0",
-    "react-i18next": "^15.7.3",
+    "react-i18next": "^16.0.0",
     "sonner": "^2.0.7",
     "tailwindcss": "4.1.13",
     "tailwindcss-animate": "^1.0.7",
