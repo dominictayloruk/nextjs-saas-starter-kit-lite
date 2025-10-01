@@ -46,7 +46,7 @@
     "@eslint/eslintrc": "^3",
     "@manypkg/cli": "^0.25.1",
     "@turbo/gen": "^2.5.8",
-    "cross-env": "^10.0.0",
+    "cross-env": "^10.1.0",
     "eslint": "^9.36.0",
     "eslint-config-next": "latest",
     "prettier": "^3.6.2",
