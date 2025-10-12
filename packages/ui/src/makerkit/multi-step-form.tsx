@@ -381,17 +381,18 @@ function AnimatedStep({
   index,
   currentIndex,
 }: React.PropsWithChildren<AnimatedStepProps>) {
-  const [shouldRender, setShouldRender] = useState(isActive);
   const stepRef = useRef<HTMLDivElement>(null);
+  const [shouldRender, setShouldRender] = useState(isActive);
 
   useEffect(() => {
     if (isActive) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional: synchronizing animation state
       setShouldRender(true);
-    } else {
-      const timer = setTimeout(() => setShouldRender(false), 300);
-
-      return () => clearTimeout(timer);
+      return;
     }
+    
+    const timer = setTimeout(() => setShouldRender(false), 300);
+    return () => clearTimeout(timer);
   }, [isActive]);
 
   useEffect(() => {

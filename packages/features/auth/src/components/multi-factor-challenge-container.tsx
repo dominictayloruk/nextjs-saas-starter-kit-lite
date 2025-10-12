@@ -208,7 +208,8 @@ function FactorsListContainer({
     if (error) {
       void signOut.mutateAsync();
     }
-  }, [error, signOut]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- signOut is stable
+  }, [error]);
 
   useEffect(() => {
     // If there is only one factor, select it automatically
@@ -219,7 +220,7 @@ function FactorsListContainer({
         onSelect(factorId);
       }
     }
-  });
+  }, [isSuccess, factors, onSelect]);
 
   if (isLoading) {
     return (

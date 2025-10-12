@@ -1,6 +1,6 @@
 'use client';
 
-import { useContext, useId, useRef, useState } from 'react';
+import { useContext, useId, useState } from 'react';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -43,7 +43,7 @@ export function Sidebar(props: {
       }) => React.ReactNode);
 }) {
   const [collapsed, setCollapsed] = useState(props.collapsed ?? false);
-  const isExpandedRef = useRef<boolean>(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const expandOnHover =
     props.expandOnHover ??
@@ -51,7 +51,7 @@ export function Sidebar(props: {
 
   const sidebarSizeClassName = getSidebarSizeClassName(
     collapsed,
-    isExpandedRef.current,
+    isExpanded,
   );
 
   const className = getClassNameBuilder(
@@ -59,7 +59,7 @@ export function Sidebar(props: {
   )();
 
   const containerClassName = cn(sidebarSizeClassName, 'bg-inherit', {
-    'max-w-[4rem]': expandOnHover && isExpandedRef.current,
+    'max-w-[4rem]': expandOnHover && isExpanded,
   });
 
   const ctx = { collapsed, setCollapsed };
@@ -68,7 +68,7 @@ export function Sidebar(props: {
     props.collapsed && expandOnHover
       ? () => {
           setCollapsed(false);
-          isExpandedRef.current = true;
+          setIsExpanded(true);
         }
       : undefined;
 
@@ -77,11 +77,11 @@ export function Sidebar(props: {
       ? () => {
           if (!isRadixPopupOpen()) {
             setCollapsed(true);
-            isExpandedRef.current = false;
+            setIsExpanded(false);
           } else {
             onRadixPopupClose(() => {
               setCollapsed(true);
-              isExpandedRef.current = false;
+              setIsExpanded(false);
             });
           }
         }
@@ -124,6 +124,21 @@ export function SidebarContent({
   return <div className={className}>{children}</div>;
 }
 
+function SidebarGroupTitle({
+  sidebarCollapsed,
+  children,
+}: React.PropsWithChildren<{ sidebarCollapsed: boolean }>) {
+  if (sidebarCollapsed) {
+    return null;
+  }
+
+  return (
+    <span className={'text-xs font-semibold uppercase text-muted-foreground'}>
+      {children}
+    </span>
+  );
+}
+
 export function SidebarGroup({
   label,
   collapsed = false,
@@ -138,53 +153,39 @@ export function SidebarGroup({
   const [isGroupCollapsed, setIsGroupCollapsed] = useState(collapsed);
   const id = useId();
 
-  const Title = (props: React.PropsWithChildren) => {
-    if (sidebarCollapsed) {
-      return null;
-    }
+  const className = cn(
+    'px-container group flex items-center justify-between space-x-2.5',
+    {
+      'py-2.5': !sidebarCollapsed,
+    },
+  );
 
-    return (
-      <span className={'text-xs font-semibold uppercase text-muted-foreground'}>
-        {props.children}
-      </span>
-    );
-  };
+  const wrapper = collapsible ? (
+    <button
+      aria-expanded={!isGroupCollapsed}
+      aria-controls={id}
+      onClick={() => setIsGroupCollapsed(!isGroupCollapsed)}
+      className={className}
+    >
+      <SidebarGroupTitle sidebarCollapsed={sidebarCollapsed}>
+        {label}
+      </SidebarGroupTitle>
 
-  const Wrapper = () => {
-    const className = cn(
-      'px-container group flex items-center justify-between space-x-2.5',
-      {
-        'py-2.5': !sidebarCollapsed,
-      },
-    );
-
-    if (collapsible) {
-      return (
-        <button
-          aria-expanded={!isGroupCollapsed}
-          aria-controls={id}
-          onClick={() => setIsGroupCollapsed(!isGroupCollapsed)}
-          className={className}
-        >
-          <Title>{label}</Title>
-
-          <If condition={collapsible}>
-            <ChevronDown
-              className={cn(`h-3 transition duration-300`, {
-                'rotate-180': !isGroupCollapsed,
-              })}
-            />
-          </If>
-        </button>
-      );
-    }
-
-    return (
-      <div className={className}>
-        <Title>{label}</Title>
-      </div>
-    );
-  };
+      <If condition={collapsible}>
+        <ChevronDown
+          className={cn(`h-3 transition duration-300`, {
+            'rotate-180': !isGroupCollapsed,
+          })}
+        />
+      </If>
+    </button>
+  ) : (
+    <div className={className}>
+      <SidebarGroupTitle sidebarCollapsed={sidebarCollapsed}>
+        {label}
+      </SidebarGroupTitle>
+    </div>
+  );
 
   return (
     <div
@@ -192,7 +193,7 @@ export function SidebarGroup({
         'space-y-1 py-1': !collapsed,
       })}
     >
-      <Wrapper />
+      {wrapper}
 
       <If condition={collapsible ? !isGroupCollapsed : true}>
         <div id={id} className={'flex flex-col space-y-1.5'}>

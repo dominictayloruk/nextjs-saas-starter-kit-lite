@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { useQuery } from '@tanstack/react-query';
 import { RocketIcon } from 'lucide-react';
@@ -36,18 +36,13 @@ const VERSION_UPDATER_REFETCH_INTERVAL_SECONDS =
 export function VersionUpdater(props: { intervalTimeInSecond?: number }) {
   const { data } = useVersionUpdater(props);
   const [dismissed, setDismissed] = useState(false);
-  const [showDialog, setShowDialog] = useState<boolean>(false);
-
-  useEffect(() => {
-    setShowDialog(data?.didChange ?? false);
-  }, [data?.didChange]);
 
   if (!data?.didChange || dismissed) {
     return null;
   }
 
   return (
-    <AlertDialog open={showDialog} onOpenChange={setShowDialog}>
+    <AlertDialog open={data?.didChange && !dismissed}>
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle className={'flex items-center space-x-4'}>
@@ -63,10 +58,7 @@ export function VersionUpdater(props: { intervalTimeInSecond?: number }) {
         <AlertDialogFooter>
           <Button
             variant={'outline'}
-            onClick={() => {
-              setShowDialog(false);
-              setDismissed(true);
-            }}
+            onClick={() => setDismissed(true)}
           >
             <Trans i18nKey="common:back" />
           </Button>

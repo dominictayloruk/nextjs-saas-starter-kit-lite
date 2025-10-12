@@ -110,16 +110,18 @@ export const ImageUploadInput: React.FC<Props> =
     );
 
     useEffect(() => {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional: syncing external prop to state
       setState((state) => ({ ...state, image }));
     }, [image]);
 
     useEffect(() => {
       if (!image) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional: cleanup callback
         onRemove();
       }
     }, [image, onRemove]);
 
-    const Input = () => (
+    const inputElement = (
       <input
         {...props}
         className={cn('hidden', props.className)}
@@ -132,7 +134,7 @@ export const ImageUploadInput: React.FC<Props> =
     );
 
     if (!visible) {
-      return <Input />;
+      return inputElement;
     }
 
     return (
@@ -140,7 +142,7 @@ export const ImageUploadInput: React.FC<Props> =
         id={'image-upload-input'}
         className={`relative flex h-10 w-full cursor-pointer rounded-md border border-dashed border-input bg-background px-3 py-2 text-sm outline-none ring-primary ring-offset-2 ring-offset-background transition-all file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus:ring-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50`}
       >
-        <Input />
+        {inputElement}
 
         <div className={'flex items-center space-x-4'}>
           <div className={'flex'}>

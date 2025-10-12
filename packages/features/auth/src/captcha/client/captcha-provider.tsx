@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useCallback, useRef, useState } from 'react';
+import { createContext, useCallback, useState } from 'react';
 
 import { type TurnstileInstance } from '@marsidev/react-turnstile';
 
@@ -23,15 +23,15 @@ export const Captcha = createContext<{
 
 export function CaptchaProvider(props: { children: React.ReactNode }) {
   const [token, setToken] = useState<string>('');
-  const instanceRef = useRef<TurnstileInstance | null>(null);
+  const [instance, setInstanceState] = useState<TurnstileInstance | null>(null);
 
   const setInstance = useCallback((ref: TurnstileInstance) => {
-    instanceRef.current = ref;
+    setInstanceState(ref);
   }, []);
 
   return (
     <Captcha.Provider
-      value={{ token, setToken, instance: instanceRef.current, setInstance }}
+      value={{ token, setToken, instance, setInstance }}
     >
       {props.children}
     </Captcha.Provider>

@@ -46,7 +46,7 @@ export function ImageUploader(
     [props],
   );
 
-  const Input = () => (
+  const inputElement = (
     <ImageUploadInput
       {...control}
       accept={'image/*'}
@@ -58,13 +58,14 @@ export function ImageUploader(
   );
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- Intentional: syncing external prop to state
     setImage(props.value);
   }, [props.value]);
 
   if (!image) {
     return (
       <FallbackImage descriptionSection={props.children}>
-        <Input />
+        {inputElement}
       </FallbackImage>
     );
   }
@@ -74,7 +75,7 @@ export function ImageUploader(
       <label className={'relative h-20 w-20 animate-in fade-in zoom-in-50'}>
         <Image fill className={'h-20 w-20 rounded-full'} src={image} alt={''} />
 
-        <Input />
+        {inputElement}
       </label>
 
       <div>
