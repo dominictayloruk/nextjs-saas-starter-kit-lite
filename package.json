@@ -34,7 +34,7 @@
   "packageManager": "pnpm@10.19.0",
   "pnpm": {
     "overrides": {
-      "react-is": "19.0.0"
+      "react-is": "19.2.0"
     },
     "onlyBuiltDependencies": [
       "core-js-pure",

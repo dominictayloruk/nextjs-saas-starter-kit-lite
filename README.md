@@ -287,6 +287,35 @@ pnpm --filter web supabase db push
 
 This command will push the migration to the Supabase project. You can now apply the migration to the Supabase database.
 
+## Docker Deployment
+
+This project includes full Docker support for containerized deployments.
+
+### Quick Start with Docker
+
+```bash
+# Build the Docker image
+docker build -t nextjs-saas:latest .
+
+# Run with Docker Compose
+docker-compose up
+```
+
+### Documentation
+
+- 📦 **[Docker Deployment Guide](DOCKER.md)** - Complete Docker deployment instructions
+- 🚀 **[Quick Start Guide](QUICKSTART_DOCKER.md)** - Get started with Docker in minutes
+- 🔧 **[Build Fix Summary](BUILD_FIX_SUMMARY.md)** - Technical details of the Docker build configuration
+
+### CI/CD
+
+The project includes GitLab CI configuration that:
+- Builds the Next.js application in a Docker container
+- Runs tests and validation
+- Creates deployment artifacts
+
+See `.gitlab-ci.yml` for the complete CI/CD pipeline configuration.
+
 ## Going to Production
 
 #### 1. Create a Supabase project

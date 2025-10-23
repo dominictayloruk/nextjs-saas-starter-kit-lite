@@ -1,11 +1,16 @@
 {
   "name": "@kit/tailwind-config",
   "version": "0.1.0",
+  "type": "module",
   "main": "index.ts",
   "license": "MIT",
+  "exports": {
+    ".": "./index.ts",
+    "./postcss": "./postcss.cjs"
+  },
   "files": [
     "index.ts",
-    "postcss.js"
+    "postcss.cjs"
   ],
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
