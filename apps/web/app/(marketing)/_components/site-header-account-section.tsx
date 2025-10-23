@@ -17,10 +17,12 @@ import { Trans } from '@kit/ui/trans';
 import featuresFlagConfig from '~/config/feature-flags.config';
 import pathsConfig from '~/config/paths.config';
 
-const ModeToggle = dynamic(() =>
-  import('@kit/ui/mode-toggle').then((mod) => ({
-    default: mod.ModeToggle,
-  })),
+const ModeToggle = dynamic(
+  () =>
+    import('@kit/ui/mode-toggle').then((mod) => ({
+      default: mod.ModeToggle,
+    })),
+  { ssr: false },
 );
 
 const paths = {
