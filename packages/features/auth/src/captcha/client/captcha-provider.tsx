@@ -30,9 +30,7 @@ export function CaptchaProvider(props: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <Captcha.Provider
-      value={{ token, setToken, instance, setInstance }}
-    >
+    <Captcha.Provider value={{ token, setToken, instance, setInstance }}>
       {props.children}
     </Captcha.Provider>
   );

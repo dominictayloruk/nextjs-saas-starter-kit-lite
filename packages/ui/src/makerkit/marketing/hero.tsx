@@ -39,7 +39,7 @@ export function Hero({
           {pill && (
             <div
               className={cn({
-                ['delay-300 duration-700 animate-in fade-in fill-mode-both']:
+                ['animate-in fade-in fill-mode-both delay-300 duration-700']:
                   animate,
               })}
             >
@@ -52,7 +52,7 @@ export function Hero({
 
             {subtitle && (
               <div className="flex max-w-2xl flex-col space-y-1">
-                <h3 className="p-0 text-center font-sans text-xl font-normal tracking-tight text-muted-foreground">
+                <h3 className="text-muted-foreground p-0 text-center font-sans text-xl font-normal tracking-tight">
                   {subtitle}
                 </h3>
               </div>
@@ -62,7 +62,7 @@ export function Hero({
           {cta && (
             <div
               className={cn({
-                ['delay-500 duration-1000 animate-in fade-in fill-mode-both']:
+                ['animate-in fade-in fill-mode-both delay-500 duration-1000']:
                   animate,
               })}
             >
@@ -78,7 +78,7 @@ export function Hero({
             MozAnimationDuration: '100ms',
           }}
           className={cn('container mx-auto flex justify-center py-8', {
-            ['delay-1000 duration-1000 animate-in fade-in zoom-in-95 slide-in-from-top-32 fill-mode-both']:
+            ['animate-in fade-in zoom-in-95 slide-in-from-top-32 fill-mode-both delay-1000 duration-1000']:
               animate,
           })}
         >

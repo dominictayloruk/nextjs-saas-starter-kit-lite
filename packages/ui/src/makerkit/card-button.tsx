@@ -17,7 +17,7 @@ export const CardButton: React.FC<
   return (
     <Comp
       className={cn(
-        'group relative flex h-36 flex-col rounded-lg border transition-all hover:bg-secondary/20 hover:shadow active:bg-secondary active:bg-secondary/50 active:shadow-lg dark:shadow-primary/20',
+        'group hover:bg-secondary/20 active:bg-secondary active:bg-secondary/50 dark:shadow-primary/20 relative flex h-36 flex-col rounded-lg border transition-all hover:shadow active:shadow-lg',
         className,
       )}
       {...props}
@@ -39,7 +39,7 @@ export const CardButtonTitle: React.FC<
     <Comp
       className={cn(
         className,
-        'align-super text-sm font-medium text-muted-foreground transition-colors group-hover:text-secondary-foreground',
+        'text-muted-foreground group-hover:text-secondary-foreground align-super text-sm font-medium transition-colors',
       )}
       {...props}
     >
@@ -69,7 +69,7 @@ export const CardButtonHeader: React.FC<
 
         <ChevronRight
           className={cn(
-            'absolute right-2 top-4 h-4 text-muted-foreground transition-colors group-hover:text-secondary-foreground',
+            'text-muted-foreground group-hover:text-secondary-foreground absolute top-4 right-2 h-4 transition-colors',
             {
               hidden: !displayArrow,
             },

@@ -25,14 +25,14 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   return (
     <div
       className={cn(
-        'rounded-3xl p-2 ring-2 ring-gray-100 dark:ring-primary/10',
+        'dark:ring-primary/10 rounded-3xl p-2 ring-2 ring-gray-100',
         className,
       )}
       {...props}
     >
       <CardHeader>
         <CardTitle className="text-xl font-semibold">{label}</CardTitle>
-        <CardDescription className="max-w-xs text-sm font-semibold tracking-tight text-muted-foreground">
+        <CardDescription className="text-muted-foreground max-w-xs text-sm font-semibold tracking-tight">
           {description}
         </CardDescription>
       </CardHeader>

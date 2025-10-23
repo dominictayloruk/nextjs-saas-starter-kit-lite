@@ -12,7 +12,7 @@ export const GradientSecondaryText: React.FC<
   return (
     <Comp
       className={cn(
-        'bg-gradient-to-r from-foreground/50 to-foreground bg-clip-text text-transparent',
+        'from-foreground/50 to-foreground bg-gradient-to-r bg-clip-text text-transparent',
         className,
       )}
       {...props}

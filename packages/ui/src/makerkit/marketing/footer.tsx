@@ -38,16 +38,16 @@ export const Footer: React.FC<FooterProps> = ({
               <div>{logo}</div>
               <div className="flex flex-col space-y-4">
                 <div>
-                  <p className="text-sm text-muted-foreground">{description}</p>
+                  <p className="text-muted-foreground text-sm">{description}</p>
                 </div>
-                <div className="flex text-xs text-muted-foreground">
+                <div className="text-muted-foreground flex text-xs">
                   <p>{copyright}</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex w-full flex-col space-y-8 lg:flex-row lg:justify-end lg:space-x-6 lg:space-y-0 xl:space-x-16">
+          <div className="flex w-full flex-col space-y-8 lg:flex-row lg:justify-end lg:space-y-0 lg:space-x-6 xl:space-x-16">
             {sections.map((section, index) => (
               <div key={index}>
                 <div className="flex flex-col space-y-2.5">
@@ -83,7 +83,7 @@ function FooterLink({
   children,
 }: React.PropsWithChildren<{ href: string }>) {
   return (
-    <li className="text-sm text-muted-foreground hover:underline [&>a]:transition-colors">
+    <li className="text-muted-foreground text-sm hover:underline [&>a]:transition-colors">
       <a href={href}>{children}</a>
     </li>
   );

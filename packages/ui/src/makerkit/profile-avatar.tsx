@@ -27,7 +27,7 @@ export function ProfileAvatar(props: ProfileAvatarProps) {
         <AvatarFallback
           className={cn(
             props.fallbackClassName,
-            'uppercase animate-in fade-in',
+            'animate-in fade-in uppercase',
           )}
         >
           {props.text.slice(0, 1)}

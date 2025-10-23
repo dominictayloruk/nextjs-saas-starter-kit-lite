@@ -49,7 +49,7 @@ const GlobalErrorPage = ({
                     </Heading>
                   </div>
 
-                  <p className={'text-lg text-muted-foreground'}>
+                  <p className={'text-muted-foreground text-lg'}>
                     <Trans i18nKey={'common:genericErrorSubHeading'} />
                   </p>
                 </div>

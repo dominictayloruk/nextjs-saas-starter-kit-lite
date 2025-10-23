@@ -7,7 +7,7 @@ const Card: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   ...props
 }) => (
   <div
-    className={cn('rounded-xl border bg-card text-card-foreground', className)}
+    className={cn('bg-card text-card-foreground rounded-xl border', className)}
     {...props}
   />
 );
@@ -26,7 +26,7 @@ const CardTitle: React.FC<React.HTMLAttributes<HTMLHeadingElement>> = ({
   ...props
 }) => (
   <h3
-    className={cn('font-semibold leading-none tracking-tight', className)}
+    className={cn('leading-none font-semibold tracking-tight', className)}
     {...props}
   />
 );
@@ -36,7 +36,7 @@ const CardDescription: React.FC<React.HTMLAttributes<HTMLParagraphElement>> = ({
   className,
   ...props
 }) => (
-  <p className={cn('text-sm text-muted-foreground', className)} {...props} />
+  <p className={cn('text-muted-foreground text-sm', className)} {...props} />
 );
 CardDescription.displayName = 'CardDescription';
 

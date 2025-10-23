@@ -43,7 +43,7 @@ function getClassName() {
     [],
   );
 
-  return cn('min-h-screen bg-background antialiased', ...font);
+  return cn('bg-background min-h-screen antialiased', ...font);
 }
 
 async function getTheme() {

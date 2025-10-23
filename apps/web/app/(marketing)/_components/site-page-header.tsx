@@ -20,7 +20,7 @@ export function SitePageHeader({
       >
         <h1
           className={
-            'font-heading text-3xl font-medium tracking-tighter dark:text-white xl:text-5xl'
+            'font-heading text-3xl font-medium tracking-tighter xl:text-5xl dark:text-white'
           }
         >
           {title}
@@ -28,7 +28,7 @@ export function SitePageHeader({
 
         <h2
           className={
-            'text-lg tracking-tight text-muted-foreground 2xl:text-2xl'
+            'text-muted-foreground text-lg tracking-tight 2xl:text-2xl'
           }
         >
           {subtitle}

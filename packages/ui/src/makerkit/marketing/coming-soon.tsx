@@ -19,7 +19,7 @@ const ComingSoonText: React.FC<React.HTMLAttributes<HTMLParagraphElement>> = ({
   ...props
 }) => (
   <GradientSecondaryText
-    className={cn('text-lg text-muted-foreground md:text-xl', className)}
+    className={cn('text-muted-foreground text-lg md:text-xl', className)}
     {...props}
   />
 );
@@ -95,7 +95,7 @@ ComingSoon.displayName = 'ComingSoon';
 const ComingSoonLogo: React.FC<React.HTMLAttributes<HTMLImageElement>> = ({
   className,
   ...props
-}) => <div className={cn(className, 'fixed left-8 top-8')} {...props} />;
+}) => <div className={cn(className, 'fixed top-8 left-8')} {...props} />;
 ComingSoonLogo.displayName = 'ComingSoonLogo';
 
 export {

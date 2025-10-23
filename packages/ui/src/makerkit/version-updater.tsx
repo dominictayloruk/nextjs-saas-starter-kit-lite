@@ -56,10 +56,7 @@ export function VersionUpdater(props: { intervalTimeInSecond?: number }) {
         </AlertDialogHeader>
 
         <AlertDialogFooter>
-          <Button
-            variant={'outline'}
-            onClick={() => setDismissed(true)}
-          >
+          <Button variant={'outline'} onClick={() => setDismissed(true)}>
             <Trans i18nKey="common:back" />
           </Button>
 

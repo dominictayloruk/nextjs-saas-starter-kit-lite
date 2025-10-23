@@ -42,7 +42,7 @@ function PageWithSidebar(props: PageProps) {
 
         <div
           className={
-            'flex flex-1 flex-col overflow-y-auto bg-background px-4 lg:px-0'
+            'bg-background flex flex-1 flex-col overflow-y-auto px-4 lg:px-0'
           }
         >
           {Children}
@@ -81,7 +81,7 @@ function PageWithHeader(props: PageProps) {
       >
         <div
           className={cn(
-            'flex h-14 items-center justify-between bg-muted/40 px-4 dark:border-border dark:shadow-primary/10 lg:justify-start lg:shadow-sm',
+            'bg-muted/40 dark:border-border dark:shadow-primary/10 flex h-14 items-center justify-between px-4 lg:justify-start lg:shadow-sm',
             {
               'sticky top-0 z-10 backdrop-blur-md': props.sticky ?? true,
             },
@@ -119,7 +119,7 @@ export function PageNavigation(props: React.PropsWithChildren) {
 export function PageDescription(props: React.PropsWithChildren) {
   return (
     <div className={'h-6'}>
-      <div className={'text-xs font-normal leading-none text-muted-foreground'}>
+      <div className={'text-muted-foreground text-xs leading-none font-normal'}>
         {props.children}
       </div>
     </div>
@@ -130,7 +130,7 @@ export function PageTitle(props: React.PropsWithChildren) {
   return (
     <h1
       className={
-        'h-6 font-heading font-bold leading-none tracking-tight dark:text-white'
+        'font-heading h-6 leading-none font-bold tracking-tight dark:text-white'
       }
     >
       {props.children}

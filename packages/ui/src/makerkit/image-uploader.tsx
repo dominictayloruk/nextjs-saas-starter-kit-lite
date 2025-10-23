@@ -72,7 +72,7 @@ export function ImageUploader(
 
   return (
     <div className={'flex items-center space-x-4'}>
-      <label className={'relative h-20 w-20 animate-in fade-in zoom-in-50'}>
+      <label className={'animate-in fade-in zoom-in-50 relative h-20 w-20'}>
         <Image fill className={'h-20 w-20 rounded-full'} src={image} alt={''} />
 
         {inputElement}
@@ -96,10 +96,10 @@ function FallbackImage(
     <div className={'flex items-center space-x-4'}>
       <label
         className={
-          'relative flex h-20 w-20 cursor-pointer flex-col items-center justify-center rounded-full border border-border animate-in fade-in zoom-in-50 hover:border-primary'
+          'border-border animate-in fade-in zoom-in-50 hover:border-primary relative flex h-20 w-20 cursor-pointer flex-col items-center justify-center rounded-full border'
         }
       >
-        <ImageIcon className={'h-8 text-primary'} />
+        <ImageIcon className={'text-primary h-8'} />
 
         {props.children}
       </label>

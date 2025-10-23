@@ -390,7 +390,7 @@ function AnimatedStep({
       setShouldRender(true);
       return;
     }
-    
+
     const timer = setTimeout(() => setShouldRender(false), 300);
     return () => clearTimeout(timer);
   }, [isActive]);

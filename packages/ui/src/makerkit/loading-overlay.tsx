@@ -20,14 +20,14 @@ export function LoadingOverlay({
         'flex flex-col items-center justify-center space-y-4',
         className,
         {
-          [`fixed left-0 top-0 z-[100] h-screen w-screen bg-background`]:
+          [`bg-background fixed top-0 left-0 z-[100] h-screen w-screen`]:
             fullPage,
         },
       )}
     >
       <Spinner className={spinnerClassName} />
 
-      <div className={'text-sm text-muted-foreground'}>{children}</div>
+      <div className={'text-muted-foreground text-sm'}>{children}</div>
     </div>
   );
 }
