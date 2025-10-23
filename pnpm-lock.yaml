@@ -196,8 +196,8 @@ importers:
         specifier: ^2.53.6
         version: 2.53.6
       tailwindcss:
-        specifier: 4.1.15
-        version: 4.1.15
+        specifier: 4.1.16
+        version: 4.1.16
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -620,11 +620,11 @@ importers:
         specifier: ^2.0.7
         version: 2.0.7(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       tailwindcss:
-        specifier: 4.1.15
-        version: 4.1.15
+        specifier: 4.1.16
+        version: 4.1.16
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@4.1.15)
+        version: 1.0.7(tailwindcss@4.1.16)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -702,7 +702,7 @@ importers:
   tooling/tailwind:
     dependencies:
       '@tailwindcss/postcss':
-        specifier: ^4.1.15
+        specifier: ^4.1.16
         version: 4.1.16
       autoprefixer:
         specifier: ^10.4.21
@@ -711,11 +711,11 @@ importers:
         specifier: 8.5.6
         version: 8.5.6
       tailwindcss:
-        specifier: 4.1.15
-        version: 4.1.15
+        specifier: 4.1.16
+        version: 4.1.16
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@4.1.15)
+        version: 1.0.7(tailwindcss@4.1.16)
     devDependencies:
       '@kit/eslint-config':
         specifier: workspace:*
@@ -4481,9 +4481,6 @@ packages:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
-
-  tailwindcss@4.1.15:
-    resolution: {integrity: sha512-k2WLnWkYFkdpRv+Oby3EBXIyQC8/s1HOFMBUViwtAh6Z5uAozeUSMQlIsn/c6Q2iJzqG6aJT3wdPaRNj70iYxQ==}
 
   tailwindcss@4.1.16:
     resolution: {integrity: sha512-pONL5awpaQX4LN5eiv7moSiSPd/DLDzKVRJz8Q9PgzmAdd1R4307GQS2ZpfiN7ZmekdQrfhZZiSE5jkLR4WNaA==}
@@ -8839,11 +8836,9 @@ snapshots:
 
   tailwind-merge@3.3.1: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@4.1.15):
+  tailwindcss-animate@1.0.7(tailwindcss@4.1.16):
     dependencies:
-      tailwindcss: 4.1.15
-
-  tailwindcss@4.1.15: {}
+      tailwindcss: 4.1.16
 
   tailwindcss@4.1.16: {}
 
