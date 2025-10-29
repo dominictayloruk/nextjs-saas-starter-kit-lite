@@ -3,7 +3,7 @@
 # Base stage with Node.js and pnpm
 FROM node:24-alpine AS base
 RUN apk add --no-cache libc6-compat git python3 make g++
-RUN corepack enable && corepack prepare pnpm@10.19.0 --activate
+RUN corepack enable && corepack prepare pnpm@10.20.0 --activate
 
 # Dependencies stage
 FROM base AS deps
@@ -12,8 +12,22 @@ WORKDIR /app
 # Copy package files
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 COPY apps/web/package.json ./apps/web/
-COPY packages/*/package.json ./packages/*/
-COPY tooling/*/package.json ./tooling/*/
+COPY apps/e2e/package.json ./apps/e2e/
+COPY packages/i18n/package.json ./packages/i18n/
+COPY packages/next/package.json ./packages/next/
+COPY packages/shared/package.json ./packages/shared/
+COPY packages/supabase/package.json ./packages/supabase/
+COPY packages/ui/package.json ./packages/ui/
+COPY packages/features/accounts/package.json ./packages/features/accounts/
+COPY packages/features/auth/package.json ./packages/features/auth/
+COPY tooling/eslint/package.json ./tooling/eslint/
+COPY tooling/prettier/package.json ./tooling/prettier/
+COPY tooling/scripts/package.json ./tooling/scripts/
+COPY tooling/tailwind/package.json ./tooling/tailwind/
+COPY tooling/typescript/package.json ./tooling/typescript/
+
+# Copy scripts source files needed for preinstall hook
+COPY tooling/scripts/src ./tooling/scripts/src/
 
 # Install dependencies
 RUN pnpm install --frozen-lockfile
@@ -22,12 +36,15 @@ RUN pnpm install --frozen-lockfile
 FROM base AS builder
 WORKDIR /app
 
-# Copy dependencies from deps stage
+# Copy node_modules from deps stage
 COPY --from=deps /app/node_modules ./node_modules
-COPY --from=deps /app/apps/web/node_modules ./apps/web/node_modules
 
-# Copy all source files
-COPY . .
+# Copy source files (excluding node_modules which are in .dockerignore)
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml turbo.json ./
+COPY apps ./apps
+COPY packages ./packages
+COPY tooling ./tooling
+COPY turbo ./turbo
 
 # Create production env file if it doesn't exist
 RUN if [ ! -f apps/web/.env.local ]; then \
