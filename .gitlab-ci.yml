@@ -30,7 +30,7 @@ build:
     # Install dependencies
     - pnpm install --frozen-lockfile
     # Build with increased memory limit
-    - NODE_OPTIONS="--max-old-space-size=4096" pnpm run build
+    -  pnpm run build
   artifacts:
     paths:
       - apps/web/.next/
