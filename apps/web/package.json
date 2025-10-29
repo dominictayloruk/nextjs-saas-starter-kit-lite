@@ -94,6 +94,7 @@
     ]
   },
   "prettier": "@kit/prettier-config",
+  "packageManager": "pnpm@10.20.0",
   "browserslist": [
     "iOS >= 9",
     "Android >= 4.4",
