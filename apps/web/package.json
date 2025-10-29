@@ -4,6 +4,9 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "engines": {
+    "node": ">=24.9.2"
+  },
   "scripts": {
     "analyze": "ANALYZE=true pnpm run build",
     "build": "pnpm with-env next build",
