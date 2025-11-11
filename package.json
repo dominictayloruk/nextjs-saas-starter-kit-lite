@@ -45,7 +45,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@manypkg/cli": "^0.25.1",
-    "@turbo/gen": "^2.6.0",
+    "@turbo/gen": "^2.6.1",
     "cross-env": "^10.1.0",
     "eslint": "^9.39.1",
     "eslint-config-next": "latest",
