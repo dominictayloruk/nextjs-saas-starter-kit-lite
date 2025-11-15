@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # Base stage with Node.js and pnpm
-FROM node:24-alpine AS base
+FROM yobasystems/alpine-nodejs:min AS base
 RUN apk add --no-cache libc6-compat git python3 make g++
 RUN corepack enable && corepack prepare pnpm@10.20.0 --activate
 

@@ -16,7 +16,7 @@ stages:
 
 build:
   stage: build
-  image: node:24-alpine
+  image: yobasystems/alpine-nodejs:min
   before_script:
     - npm install --global corepack@latest
     - corepack enable
@@ -44,7 +44,7 @@ sast:
 
 test:
   stage: test
-  image: node:24-alpine
+  image: yobasystems/alpine-nodejs:min
   script:
     - 'if [ ! -d "apps/web/.next" ]; then echo "Build failed: dist directory not found" && exit 1; fi'
     - 'if [ -z "$(ls -A apps/web/.next)" ]; then echo "Build failed: dist directory is empty" && exit 1; fi'
