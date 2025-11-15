@@ -22,7 +22,7 @@ const getUser = (request: NextRequest, response: NextResponse) => {
   return supabase.auth.getUser();
 };
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const response = NextResponse.next();
 
   // set a unique request ID for each request

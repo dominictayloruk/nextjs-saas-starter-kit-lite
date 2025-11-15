@@ -2,14 +2,14 @@
 
 # NEW! Next.js Supabase SaaS Starter Kit (Lite)
 
-Start building your SaaS faster with our Next.js 15 + Supabase starter kit.
+Start building your SaaS faster with our Next.js 16 + Supabase starter kit.
 
 👉 **Looking for a full-featured SaaS Starter Kit?** [Check out the complete version](https://makerkit.dev)
 
 ⭐️ **Why Developers Trust Makerkit:**
 - Production-grade architecture decisions
 - Comprehensive TypeScript setup
-- Modern stack: Next.js 15, Supabase, TailwindCSS
+- Modern stack: Next.js 16, Supabase, TailwindCSS
 - Regular updates and active maintenance
 
 PS: the documentation for this kit is still being updated, so please check back later for more details.
@@ -17,7 +17,7 @@ PS: the documentation for this kit is still being updated, so please check back 
 ## What's Included
 
 ### Core Architecture
-- 🏗️ Next.js 15 + Turborepo monorepo setup
+- 🏗️ Next.js 16 + Turborepo monorepo setup
 - 🎨 Shadcn UI components with TailwindCSS
 - 🔐 Supabase authentication & basic DB
 - 🌐 i18n translations (client + server)
@@ -35,7 +35,7 @@ PS: the documentation for this kit is still being updated, so please check back 
 This starter kit provides core foundations:
 
 🛠️ **Technology Stack**:
-- [Next.js 15](https://nextjs.org/): A React-based framework for server-side rendering and static site generation.
+- [Next.js 16](https://nextjs.org/): A React-based framework for server-side rendering and static site generation.
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom designs.
 - [Supabase](https://supabase.com/): A realtime database for web and mobile applications.
 - [i18next](https://www.i18next.com/): A popular internationalization framework for JavaScript.
