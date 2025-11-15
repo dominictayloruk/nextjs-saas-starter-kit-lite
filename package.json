@@ -31,7 +31,7 @@
     "supabase:web:reset": "pnpm --filter web supabase:reset"
   },
   "prettier": "@kit/prettier-config",
-  "packageManager": "pnpm@10.21.0",
+  "packageManager": "pnpm@10.22.0",
   "pnpm": {
     "overrides": {
       "react-is": "19.2.0"
