@@ -18,8 +18,8 @@
     "dev": "cross-env FORCE_COLOR=1 turbo dev --parallel",
     "format": "turbo format --cache-dir=.turbo --continue -- --cache --cache-location='node_modules/.cache/.prettiercache' --ignore-path='../../.gitignore'",
     "format:fix": "turbo format --cache-dir=.turbo --continue -- --write --cache --cache-location='node_modules/.cache/.prettiercache' --ignore-path='../../.gitignore'",
-    "lint": "turbo lint --cache-dir=.turbo --continue -- --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg check",
-    "lint:fix": "turbo lint --cache-dir=.turbo --continue -- --fix --cache --cache-location 'node_modules/.cache/.eslintcache' && manypkg fix",
+    "lint": "turbo lint --cache-dir=.turbo --continue && manypkg check",
+    "lint:fix": "turbo lint:fix --cache-dir=.turbo --continue && manypkg fix",
     "typecheck": "turbo typecheck --cache-dir=.turbo",
     "test": "turbo test --cache-dir=.turbo",
     "update": "pnpm update -r",
@@ -31,7 +31,7 @@
     "supabase:web:reset": "pnpm --filter web supabase:reset"
   },
   "prettier": "@kit/prettier-config",
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.23.0",
   "pnpm": {
     "overrides": {
       "react-is": "19.2.0"
