@@ -28,7 +28,7 @@ export function BackgroundHue({
 
   return (
     <svg
-      className={`pointer-events-none fixed top-0 left-0 !m-0 hidden h-full w-full dark:block ${className}`}
+      className={`pointer-events-none fixed top-0 left-0 m-0! hidden h-full w-full dark:block ${className}`}
       style={{ opacity }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 100"
