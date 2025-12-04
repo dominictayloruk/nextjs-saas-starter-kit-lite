@@ -29,8 +29,8 @@
     "@supabase/supabase-js": "2.86.0",
     "@tanstack/react-query": "5.90.11",
     "@types/react": "npm:types-react@19.0.0-alpha.3",
-    "next": "16.0.5",
-    "react": "19.2.0",
+    "next": "16.0.7",
+    "react": "19.2.1",
     "server-only": "^0.0.1",
     "zod": "^4.1.13"
   },

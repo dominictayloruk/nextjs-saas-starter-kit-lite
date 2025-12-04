@@ -21,7 +21,7 @@
     "@kit/tailwind-config": "workspace:*",
     "@kit/tsconfig": "workspace:*",
     "@supabase/supabase-js": "2.86.0",
-    "next": "16.0.5",
+    "next": "16.0.7",
     "zod": "^4.1.13"
   },
   "eslintConfig": {
