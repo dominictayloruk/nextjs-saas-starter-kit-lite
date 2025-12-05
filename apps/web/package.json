@@ -84,7 +84,7 @@
     "postcss": "8.5.6",
     "prettier": "^3.7.4",
     "require-in-the-middle": "8.0.1",
-    "supabase": "^2.65.3",
+    "supabase": "^2.65.6",
     "tailwindcss": "4.1.17",
     "typescript": "^5.9.3"
   },
