@@ -15,6 +15,7 @@ const INTERNAL_PACKAGES = [
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
+  reactCompiler: ENABLE_REACT_COMPILER,
   /** Enables hot reloading for local packages without a build step */
   transpilePackages: INTERNAL_PACKAGES,
   // Enable standalone output for Docker deployments
@@ -34,7 +35,6 @@ const config = {
   },
   experimental: {
     mdxRs: true,
-    reactCompiler: ENABLE_REACT_COMPILER,
     optimizePackageImports: [
       'recharts',
       'lucide-react',
@@ -53,15 +53,13 @@ const config = {
       transform: 'lodash/{{member}}',
     },
   },
-  /** We already do linting and typechecking as separate tasks in CI */
-  eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
 };
 
 export default config;
 
 function getRemotePatterns() {
-  /** @type {import('next').NextConfig['remotePatterns']} */
+  /** @type {import('next/dist/shared/lib/image-config').RemotePattern[]} */
   const remotePatterns = [];
 
   if (SUPABASE_URL) {
@@ -73,16 +71,17 @@ function getRemotePatterns() {
     });
   }
 
-  return IS_PRODUCTION
-    ? remotePatterns
-    : [
-        {
-          protocol: 'http',
-          hostname: '127.0.0.1',
-        },
-        {
-          protocol: 'http',
-          hostname: 'localhost',
-        },
-      ];
+  /** @type {import('next/dist/shared/lib/image-config').RemotePattern[]} */
+  const localPatterns = [
+    {
+      protocol: 'http',
+      hostname: '127.0.0.1',
+    },
+    {
+      protocol: 'http',
+      hostname: 'localhost',
+    },
+  ];
+
+  return IS_PRODUCTION ? remotePatterns : [...remotePatterns, ...localPatterns];
 }
