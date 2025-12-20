@@ -29,15 +29,15 @@
     "@kit/ui": "workspace:*",
     "@marsidev/react-turnstile": "^1.4.0",
     "@radix-ui/react-icons": "^1.3.2",
-    "@supabase/supabase-js": "2.87.1",
+    "@supabase/supabase-js": "2.89.0",
     "@tanstack/react-query": "5.90.12",
     "@types/react": "npm:types-react@19.0.0-alpha.3",
-    "lucide-react": "^0.561.0",
-    "next": "16.0.10",
-    "react-hook-form": "^7.68.0",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.0",
+    "react-hook-form": "^7.69.0",
     "react-i18next": "^16.5.0",
     "sonner": "^2.0.7",
-    "zod": "^4.2.0"
+    "zod": "^4.2.1"
   },
   "prettier": "@kit/prettier-config",
   "eslintConfig": {
