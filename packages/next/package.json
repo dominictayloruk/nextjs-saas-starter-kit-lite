@@ -22,7 +22,7 @@
     "@kit/tsconfig": "workspace:*",
     "@supabase/supabase-js": "2.89.0",
     "next": "16.1.1",
-    "zod": "^4.2.1"
+    "zod": "^4.3.4"
   },
   "eslintConfig": {
     "root": true,
