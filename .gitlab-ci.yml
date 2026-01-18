@@ -1,6 +1,6 @@
 # You can override the included template(s) by including variable overrides
 # SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
-# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/pipeline/#customization
+# Secret Detection customization: https://docs.gitlab.com/user/application_security/secret_detection/pipeline/configure
 # Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
 # Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
 # Note that environment variables can be set in several places
@@ -8,46 +8,44 @@
 include:
 - template: Jobs/SAST.gitlab-ci.yml
 - template: Jobs/Secret-Detection.gitlab-ci.yml
-
+- template: Security/SAST-IaC.latest.gitlab-ci.yml
 stages:
 - build
 - test
 - deploy
-
 build:
   stage: build
   image: yobasystems/alpine-nodejs:min
   before_script:
-    - npm install --global corepack@latest
-    - corepack enable
-    - corepack prepare pnpm@latest-10 --activate
-    - pnpm config set store-dir .pnpm-store
+  - npm install --global corepack@latest
+  - corepack enable
+  - corepack prepare pnpm@latest-10 --activate
+  - pnpm config set store-dir .pnpm-store
   script:
-    - cd apps/web/
-    - pnpm install
-    - pnpm install --save-dev @types/react -w
-    - pnpm run build
+  - cd apps/web/
+  - pnpm install
+  - pnpm install --save-dev @types/react -w
+  - pnpm run build
   cache:
     key:
       files:
-        - pnpm-lock.yaml
+      - pnpm-lock.yaml
     paths:
-      - .pnpm-store
-
+    - ".pnpm-store"
   artifacts:
     paths:
-      - apps/web/.next/
+    - apps/web/.next/
     expire_in: 1 hour
-
 sast:
   stage: test
-
 test:
   stage: test
   image: yobasystems/alpine-nodejs:min
   script:
-    - 'if [ ! -d "apps/web/.next" ]; then echo "Build failed: dist directory not found" && exit 1; fi'
-    - 'if [ -z "$(ls -A apps/web/.next)" ]; then echo "Build failed: dist directory is empty" && exit 1; fi'
-    - echo "Build completed successfully"
+  - 'if [ ! -d "apps/web/.next" ]; then echo "Build failed: dist directory not found"
+    && exit 1; fi'
+  - 'if [ -z "$(ls -A apps/web/.next)" ]; then echo "Build failed: dist directory
+    is empty" && exit 1; fi'
+  - echo "Build completed successfully"
   dependencies:
-    - build
+  - build
