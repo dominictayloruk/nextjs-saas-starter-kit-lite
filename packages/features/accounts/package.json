@@ -41,7 +41,7 @@
     "react-hook-form": "^7.71.1",
     "react-i18next": "^16.5.3",
     "sonner": "^2.0.7",
-    "zod": "^4.3.5"
+    "zod": "^4.3.6"
   },
   "prettier": "@kit/prettier-config",
   "eslintConfig": {
