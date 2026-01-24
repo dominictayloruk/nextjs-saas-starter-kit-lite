@@ -23,7 +23,7 @@
     "@types/react": "npm:types-react@19.0.0-alpha.3"
   },
   "dependencies": {
-    "pino": "^10.2.1"
+    "pino": "^10.3.0"
   },
   "eslintConfig": {
     "root": true,
