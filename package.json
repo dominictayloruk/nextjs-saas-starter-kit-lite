@@ -31,7 +31,7 @@
     "supabase:web:reset": "pnpm --filter web supabase:reset"
   },
   "prettier": "@kit/prettier-config",
-  "packageManager": "pnpm@10.29.3",
+  "packageManager": "pnpm@10.30.0",
   "pnpm": {
     "overrides": {
       "react-is": "19.2.0",
@@ -49,13 +49,13 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
     "@manypkg/cli": "^0.25.1",
-    "@turbo/gen": "^2.8.7",
+    "@turbo/gen": "^2.8.10",
     "cross-env": "^10.1.0",
-    "eslint": "^9",
+    "eslint": "^9.39.2",
     "eslint-config-next": "latest",
     "prettier": "^3.8.1",
     "react-i18next": "^16.5.4",
-    "turbo": "2.8.7",
+    "turbo": "2.8.10",
     "typescript": "^5.9.3"
   }
 }
