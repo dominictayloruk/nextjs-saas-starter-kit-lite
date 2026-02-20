@@ -85,7 +85,7 @@
     "prettier": "^3.8.1",
     "require-in-the-middle": "8.0.1",
     "supabase": "^2.76.9",
-    "tailwindcss": "4.1.18",
+    "tailwindcss": "4.2.0",
     "typescript": "^5.9.3"
   },
   "eslintConfig": {
