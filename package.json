@@ -55,7 +55,7 @@
     "eslint-config-next": "latest",
     "prettier": "^3.8.1",
     "react-i18next": "^16.5.4",
-    "turbo": "2.8.10",
+    "turbo": "2.8.12",
     "typescript": "^5.9.3"
   }
 }
